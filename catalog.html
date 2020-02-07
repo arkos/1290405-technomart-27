@@ -28,9 +28,11 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/technomart-logo-small.png" width="109" height="19"
             alt="Логотип интернет-магазина «Техномарт»" /></a>
-        <label for="search-term-field">Поиск:</label>
-        <input type="text" name="search-term" id="search-term-field" class="header-panel-input" />
-        <a href="">Закладки: 0</a>
+        <p class="search-term">
+          <label for="search-term-field">Поиск:</label>
+          <input type="text" name="search-term" id="search-term-field" class="header-panel-input" />
+        </p>
+        <a class="bookmarks-link" href="">Закладки: 0</a>
         <a class="cart-link-user" href="">Корзина: 10</a>
         <a class="button-order" href="">Оформить заказ</a>
       </div>
@@ -40,7 +42,7 @@
         <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
       <div class="button-logged-in">
-        <a href="profile.html">Равшан Джумшутович</a>
+        <a class="user-name" href="profile.html">Равшан Джумшутович</a>
         <a href="logout.html" aria-label="Выйти"></a>
       </div>
       <ul class="personal-list">
@@ -79,14 +81,16 @@
           </fieldset>
           <fieldset>
             <legend>Питание:</legend>
-            <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
-              id="power-type-battery-field" value="battery">
-            <label for="power-type-battery-field">Аккумуляторные</label>
-            <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
-              id="power-type-plugin-field" value="plugin">
-            <label for="power-type-plugin-field">Сетевые</label>
+            <ul class="filter-power">
+              <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
+                id="power-type-battery-field" value="battery">
+              <label for="power-type-battery-field">Аккумуляторные</label>
+              <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
+                id="power-type-plugin-field" value="plugin">
+              <label for="power-type-plugin-field">Сетевые</label>
+            </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button type="submit" class="filter-button">Показать</button>
         </form>
       </section>
       <section class="catalog">
@@ -129,8 +133,8 @@
                 <span class="catalog-item-model">BFG 2000</span>
               </h3>
               <p class="catalog-item-image">
-                <a class="button button-buy" href="#">Купить</a>
-                <button type="button button-bookmark">В закладки</button>
+                <a class="button-buy" href="#">Купить</a>
+                <button class="button-bookmark" type="button">В закладки</button>
               </p>
             </a>
             <p class="catalog-item-price">
@@ -264,7 +268,7 @@
           <b>Обратная связь:</b>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="footer-copyright">
+        <p class="footer-contact-dev">
           <b>Разработано-</b>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
