@@ -3,9 +3,12 @@
 
   <head>
     <meta charset="utf-8" />
+    <title>HTML Academy: Техномарт</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>HTML Academy: Техномарт</title>
   </head>
 
   <body>
@@ -25,9 +28,11 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/technomart-logo-small.png" width="109" height="19"
             alt="Логотип интернет-магазина «Техномарт»" /></a>
-        <label for="search-term-field">Поиск:</label>
-        <input type="text" name="search-term" id="search-term-field" class="header-panel-input" />
-        <a href="">Закладки: 0</a>
+        <p class="search-term">
+          <label for="search-term-field">Поиск:</label>
+          <input type="text" name="search-term" id="search-term-field" class="header-panel-input" />
+        </p>
+        <a class="bookmarks-link" href="">Закладки: 0</a>
         <a class="cart-link-guest" href="">Корзина: 0</a>
         <a class="button-order" href="">Оформить заказ</a>
       </div>
@@ -43,26 +48,28 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
-      <section class="features">
-        <h2>КОМПАНИЯ «Техномарт»</h2>
-        <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-          равнодушными любителей сэкономить на гастарбайтерах. </p>
-        <p> Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
-          компаниями: </p>
-        <ul class="features-list">
-          <li class="feature-item">Деловые линии</li>
-          <li class="feature-item">Автотрейдинг</li>
-          <li class="feature-item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="" class="button">Подробнее о компании</a>
-      </section>
-      <section class="contact-info">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#"><img src="img/address-map.jpg" width="300" height="158"
-            alt="Офис интернет-магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" /></a>
-        <a href="" class="button">Заблудились? Напишите нам!</a>
-      </section>
+      <div class="index-columns">
+        <section class="features">
+          <h2>КОМПАНИЯ «Техномарт»</h2>
+          <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+            равнодушными любителей сэкономить на гастарбайтерах. </p>
+          <p> Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
+            компаниями: </p>
+          <ul class="features-list">
+            <li class="feature-item">Деловые линии</li>
+            <li class="feature-item">Автотрейдинг</li>
+            <li class="feature-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="" class="button">Подробнее о компании</a>
+        </section>
+        <section class="contact-info">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a href="#"><img src="img/address-map.jpg" width="300" height="158"
+              alt="Офис интернет-магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" /></a>
+          <a href="" class="button">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
       <section class="modal modal-contact">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -121,7 +128,7 @@
           <b>Обратная связь:</b>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="footer-copyright">
+        <p class="footer-contact-dev">
           <b>Разработано-</b>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
