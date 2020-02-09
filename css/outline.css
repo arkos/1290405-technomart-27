@@ -12,6 +12,14 @@ html, body {
   width: 1200px;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+
+  /* temp for grid */
+  outline: 1px solid gold;
+}
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -93,14 +101,13 @@ html, body {
 }
 
 main {
-
   /* temp for grid */
   padding-top: 1936px;
   outline: 1px solid brown;
 }
 
 main .index-columns {
-  padding: 82px 130px 86px;
+  padding: 82px 0 86px;
   display: flex;
   justify-content: space-between;
 
@@ -131,11 +138,33 @@ main .index-columns {
 .main-footer {
   margin: 0;
   padding: 0;
-  width: 1200px;
+  width: 100%;
 
   /* temp for grid */
   min-height: 300px;
   outline: 1px solid yellow;
+}
+
+/* .main-footer-wrapper {
+  margin: 0 auto;
+  width: 940px;
+} */
+
+.main-footer-logo {
+  display: block;
+  width: 220px;
+  height: 68px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+
+  /* temp for grid */
+  outline: 1px solid yellowgreen;
+}
+
+.main-footer-logo img {
+  margin: 0 auto;
+  display: block; 
 }
 
 .main-footer-top {
@@ -145,22 +174,58 @@ main .index-columns {
 }
 
 .main-footer-bottom {
-  display: flex;
-  /* justify-content: space-between; */
-  padding-left: 131px;
-  padding-right: 145px;
-
   /* temp for grid */
   min-height: 107px;
   outline: 1px solid white;
+}
+
+.main-footer-features-list {
+  margin: 0;
+  padding: 0;
+  width: 547px;
+  /* temp for grid */
+  min-height: 68px;
+  outline: 1px solid pink
+}
+
+.footer-site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.footer-categories {
+  display: flex;
+  justify-content: space-between;
+  /* temp for grid */
+  outline: 1px solid magenta;
+}
+
+.footer-categories p{
+  width: 322px;
+  /* temp for grid */
+  min-height: 40px;
+}
+
+.main-footer-product-list {
+  margin: 0;
+  padding: 0;
+  width: 524px;
+  /* temp for grid */
+  min-height: 40px;
+  outline: 1px solid palevioletred;
+}
+
+
+
+.main-footer-bottom .container{
+  display: flex;
 }
 
 .main-footer-bottom .copyright {
   width: 228px;
   margin: 0;
   padding: 0;
-  padding-top: 39px;
-  padding-bottom: 35px;
   margin-right: 161px;
   /* temp for grid */
   min-height: 107px;
@@ -181,7 +246,7 @@ main .index-columns {
   padding: 0;
   width: 135px;
   margin-right: 53px;
-  /* temp for grid */
+  /* temp for grid */   
   min-height: 107px;
   outline: 1px solid yellow;
 }
