@@ -428,5 +428,17 @@ h1.page-title {
   color: #ee3643;
 }
 
-/* catalog.html */
+/* grid styles */
+
+html, body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  /* Temporarily for grid */
+  background-image: url('../img/index-grid.png');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+}
 
