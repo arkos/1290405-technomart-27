@@ -1,29 +1,9 @@
-body {
-  /* Temporarily for grid */
-  background-image: url('../img/index-grid.png');
-  background-size: 1200px auto;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  /* temp for grid */
-  width: 1200px;
-}
-
 .container {
-  width: 940px;
-  margin: 0 auto;
-
   /* temp for grid */
   outline: 1px solid gold;
 }
 
 .main-header {
-  display: flex;
-  flex-direction: column;
-  
   /* temp for grid */
   outline: 2px solid limegreen;
   min-height: 320px;
@@ -31,58 +11,23 @@ html, body {
 }
 
 .main-navigation {
-  width: 940px;
-  margin: 0 auto;
-
   /* temp for grid */
-
   outline: 2px solid tomato;
   min-height: 60px;
   background-color: transparent;
-
 }
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
   /* temp for grid */
   min-height: 60px;
 }
 
-.main-header-logo {
-  width: 220px;
-  height: 47px;
-
-  /* temp for grid */
-}
-
-.search-term {
-  margin: 0;
-  padding: 0;
-}
-
 .main-header-panel {
-  margin: 0;
-  padding: 0;
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-between;
-
   /* temp for grid */
   min-height: 42px;
 }
 
 .main-panel-wrapper {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #293449;
-  order: -2;
-
   /* temp for grid */
   min-height: 42px;
   background-color: transparent;
@@ -90,11 +35,6 @@ html, body {
 }
 
 .main-middle-panel {
-  width: 940px;
-  margin: 0 auto;
-  margin-left: 130px;
-  order: -1;
-
   /* temp for grid */
   outline: 1px solid orange;
   min-height: 158px;
@@ -107,10 +47,6 @@ main {
 }
 
 main .index-columns {
-  padding: 82px 0 86px;
-  display: flex;
-  justify-content: space-between;
-
   /* temp for grid */
   min-height: 536px;
   outline: 2px solid violet;
@@ -118,53 +54,26 @@ main .index-columns {
 }
 
 .features {
-  margin: 0;
-  padding: 0;
-  width: 519px;
   /* temp for grid */
   min-height: 368px;
   outline: 1px solid red;
 }
 
 .contact-info {
-  margin: 0;
-  padding: 0;
-  width: 300px;
   /* temp for grid */
   min-height: 368px;
   outline: 1px solid rebeccapurple;
 }
 
 .main-footer {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-
   /* temp for grid */
   min-height: 300px;
   outline: 1px solid yellow;
 }
 
-/* .main-footer-wrapper {
-  margin: 0 auto;
-  width: 940px;
-} */
-
 .main-footer-logo {
-  display: block;
-  width: 220px;
-  height: 68px;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  box-sizing: border-box;
-
-  /* temp for grid */
+   /* temp for grid */
   outline: 1px solid yellowgreen;
-}
-
-.main-footer-logo img {
-  margin: 0 auto;
-  display: block; 
 }
 
 .main-footer-top {
@@ -180,81 +89,44 @@ main .index-columns {
 }
 
 .main-footer-features-list {
-  margin: 0;
-  padding: 0;
-  width: 547px;
   /* temp for grid */
   min-height: 68px;
   outline: 1px solid pink
 }
 
-.footer-site-navigation {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-
 .footer-categories {
-  display: flex;
-  justify-content: space-between;
   /* temp for grid */
   outline: 1px solid magenta;
 }
 
 .footer-categories p{
-  width: 322px;
   /* temp for grid */
   min-height: 40px;
 }
 
 .main-footer-product-list {
-  margin: 0;
-  padding: 0;
-  width: 524px;
   /* temp for grid */
   min-height: 40px;
   outline: 1px solid palevioletred;
 }
 
-
-
-.main-footer-bottom .container{
-  display: flex;
-}
-
 .main-footer-bottom .copyright {
-  width: 228px;
-  margin: 0;
-  padding: 0;
-  margin-right: 161px;
   /* temp for grid */
   min-height: 107px;
-  box-sizing: border-boxl;
 }
 
 .main-footer-bottom .social-list {
-  margin: 0;
-  padding: 0;
-  width: 132px;
-  margin-right: 119px;
   /* temp for grid */
   min-height: 107px;
 }
 
 .footer-contact-dev:nth-child(3) {
-  margin: 0;
-  padding: 0;
-  width: 135px;
-  margin-right: 53px;
   /* temp for grid */   
   min-height: 107px;
   outline: 1px solid yellow;
 }
 
 .footer-contact-dev:last-of-type {
-  margin: 0;
-  padding: 0;
-  width: 96px;
   /* temp for grid */
   min-height: 107px;
   outline: 1px solid yellow;
