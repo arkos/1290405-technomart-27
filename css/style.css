@@ -57,7 +57,7 @@ a {
   order: -1;
 }
 
-.main-wrapper {
+.catalog-columns {
   display: flex;
   justify-content: space-between;
 }
@@ -307,7 +307,21 @@ main .index-columns {
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item a {
