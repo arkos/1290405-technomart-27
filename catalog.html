@@ -89,12 +89,16 @@
             <fieldset class="power-type">
               <legend>Питание:</legend>
               <ul class="filter-power">
-                <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
-                  id="power-type-battery-field" value="battery">
-                <label for="power-type-battery-field">Аккумуляторные</label>
-                <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
-                  id="power-type-plugin-field" value="plugin">
-                <label for="power-type-plugin-field">Сетевые</label>
+                <li>
+                  <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
+                    id="power-type-battery-field" value="battery">
+                  <label for="power-type-battery-field">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
+                    id="power-type-plugin-field" value="plugin">
+                  <label for="power-type-plugin-field">Сетевые</label>
+                </li>
               </ul>
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
@@ -139,11 +143,11 @@
                   <span class="catalog-item-name">Перфоратор BOSCH</span>
                   <span class="catalog-item-model">BFG 2000</span>
                 </h3>
-                <p class="catalog-item-image">
-                  <a class="button-buy" href="#">Купить</a>
-                  <button class="button-bookmark" type="button">В закладки</button>
-                </p>
               </a>
+              <p class="catalog-item-image">
+                <a class="button-buy" href="#">Купить</a>
+                <button class="button-bookmark" type="button">В закладки</button>
+              </p>
               <p class="catalog-item-price">
                 <b>12500 Р.</b>
               </p>
