@@ -30,7 +30,6 @@
 .main-panel-wrapper {
   /* temp for grid */
   min-height: 42px;
-  background-color: transparent;
   outline: 1px solid blue;
 }
 
