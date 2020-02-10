@@ -7,7 +7,6 @@
   /* temp for grid */
   outline: 2px solid limegreen;
   min-height: 320px;
-  margin-bottom: 59px;
 }
 
 .main-navigation {
@@ -41,7 +40,7 @@
 
 main {
   /* temp for grid */
-  padding-top: 1936px;
+  /* padding-top: 1936px; */
   outline: 1px solid brown;
 }
 
@@ -129,4 +128,14 @@ main .index-columns {
   /* temp for grid */
   min-height: 107px;
   outline: 1px solid yellow;
+}
+
+.product-filters {
+  /* temp for grid */
+  outline: 1px solid blue;
+}
+
+.catalog {
+  /* temp for grid */
+  outline: 1px solid black;
 }
