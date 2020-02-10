@@ -40,9 +40,18 @@ a {
 
 .main-header {
   background-color: #f4f7f9;
+  width: 100%;
+
 
   display: flex;
   flex-direction: column;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+  order: -1;
 }
 
 .main-navigation {
@@ -95,6 +104,7 @@ a {
   padding: 0;
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 46px;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
@@ -116,13 +126,6 @@ a {
   min-height: 42px;
   background-color: transparent;
   outline: 1px solid blue;
-}
-
-.main-middle-panel {
-  width: 940px;
-  margin: 0 auto;
-  margin-left: 130px;
-  order: -1;
 }
 
 .main-header-panel a {
@@ -168,6 +171,16 @@ a {
 .button-logged-in .user-name {
   font-size: 21px;
   line-height: 21px;
+}
+
+.button-phone {
+  display: block;
+  width: 270px;
+  height: 45px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  border: solid 3px #ffffff;
+  box-sizing: border-box;
 }
 
 main .index-columns {
@@ -321,6 +334,9 @@ h1.page-title {
 }
 
 .main-header-description {
+  margin: 0;
+  padding: 0;
+  width: 196px;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -328,7 +344,8 @@ h1.page-title {
 }
 
 .main-header-contact-details {
-  border: solid 3px #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .main-header-contact-details a {
@@ -337,7 +354,7 @@ h1.page-title {
   line-height: 21px;
 }
 
-.main-header-contact-details span {
+.main-header-contact-details .contact-address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -345,12 +362,37 @@ h1.page-title {
 
 .user-navigation {
   list-style: none;
+  width: 281px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .user-navigation .login-link, .user-navigation .signup-link{
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+}
+
+.user-navigation .login-link {
+  display: inline-block;
+  width: 121px;
+  height: 45px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.user-navigation .signup-link {
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .index-columns h2{
