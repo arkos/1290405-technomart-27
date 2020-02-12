@@ -11,10 +11,13 @@ body {
   background-color: white;
 }
 
-.container {
-  width: 940px;
-  margin: 0 auto;
-}
+img { max-width: 100%; }
+
+a { text-decoration: none; }
+
+html { box-sizing: border-box; }
+
+*, *::before, *::after { box-sizing: inherit; }
 
 .visually-hidden {
   position: absolute;
@@ -30,13 +33,15 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.modal {
-  display: none;
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-}
+
+.modal { display: none; }
+
+
 
 .main-catalog {
   display: flex;
