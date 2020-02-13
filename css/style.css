@@ -11,13 +11,23 @@ body {
   background-color: white;
 }
 
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+}
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
-html { box-sizing: border-box; }
+html {
+  box-sizing: border-box;
+}
 
-*, *::before, *::after { box-sizing: inherit; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 .visually-hidden {
   position: absolute;
@@ -38,10 +48,9 @@ html { box-sizing: border-box; }
   margin: 0 auto;
 }
 
-
-.modal { display: none; }
-
-
+.modal {
+  display: none;
+}
 
 .main-catalog {
   display: flex;
@@ -204,7 +213,6 @@ html { box-sizing: border-box; }
 
 .button-phone {
   display: block;
-  box-sizing: border-box;
   width: 270px;
   height: 45px;
   margin-bottom: 10px;
@@ -254,12 +262,7 @@ main .index-columns {
   list-style: none;
 }
 
-.breadcrumbs li {
-  vertical-align: middle;
-}
-
-.breadcrumbs a,
-.breadcrumbs-current {
+.breadcrumbs a {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -326,27 +329,36 @@ main .index-columns {
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  width: 701px;
+  width: 700px;
+  height: 200px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+  /* border: 1px solid red; */
 }
 
 .catalog-item {
   position: relative;
 
-  box-sizing: border-box;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
   width: 220px;
-  min-height: 318px;
+  /* min-height: 318px; */
   margin-right: 20px;
   margin-bottom: 20px;
 
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
-
+  color: #000000;
   /* border: 1px solid #e5e5e5; */
-  border: 1px solid #ff0000;
+
+  /* border: 1px solid #ff0000; */
+  /* display: none; */
   /* box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5); */
 }
 
@@ -355,17 +367,34 @@ main .index-columns {
 }
 
 .catalog-item .title {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  /* border: 1px solid green; */
+  display: none;
+}
+
+.catalog-item h3 {
+  min-height: 33px;
+  margin: 0;
+  margin-top: 12px;
+  padding: 0 30px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
-  vertical-align: middle;
-  text-align: center;
-  color: #000000;
+  border: 1px solid skyblue;
+  display: none;
+}
+
+.catalog-item .image {
+  order: -1;
+  width: 218px;
+  height: 170px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid blue;
 }
 
 .catalog-item.flag-new::before {
@@ -380,73 +409,91 @@ main .index-columns {
   overflow: hidden;
 
   text-indent: -1000px;
-
   background: url("../img/product-new-flag.png") no-repeat 0 0;
 }
 
-.catalog-item .image {
-  order: -1;
-  width: 218px;
-  max-width: 100%;
-  height: 170px;
-}
-
-.catalog-item h3 {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 174px;
-  /* margin-left: 32px;
-  margin-right: 32px; */
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
-  margin: 0 auto;
-}
-
-
-
-.catalog-item-price {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
-  text-align: center;
-}
-
-.catalog-item .discount {
-  color: #999999;
-  text-decoration: line-through;
-}
-
 .catalog-item .price {
+  position: relative;
+
+  width: 141px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  padding: 10px 30px;
+
   color: #ffffff;
 
   background-color: #ee3643;
+  border-radius: 3px;
+  display: none;
 }
 
-.image .button-buy {
+.catalog-item .price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid white;
+  border-left-color: #ee3643;
+}
+
+.catalog-item .discount {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  color: #999999;
+  text-decoration: line-through;
+  display: none;
+}
+
+.catalog-item .actions {
+  order: -1;
+  width: 218px;
+  height: 170px;
+
+}
+
+.actions .buy,
+.actions .bookmark {
+  display: block;
+  width: 135px;
+  height: 38px;
+  margin: 0 auto;
+
+  margin-bottom: 7px;
+  padding: 7px 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #63a63e ;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius: 3px;
 }
 
-.image .button-bookmark {
-  font-size: 14px;
-  line-height: 18px;
-  color: #32425c;
-  text-transform: uppercase;
+.actions .buy {
+  margin-top: 44px;
+}
 
-  background-color: #ffffff;
-  border: 3px solid #63a63e;
+.actions .bookmark {
+  color: #32425c;
+
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.actions ~ .price {
+  margin-top: 30px;
 }
 
 .button-order {
@@ -527,7 +574,6 @@ main .index-columns {
 
 .user-navigation .login-link {
   display: inline-block;
-  box-sizing: border-box;
   width: 121px;
   height: 45px;
   padding-top: 14px;
@@ -540,7 +586,6 @@ main .index-columns {
 
 .user-navigation .signup-link {
   display: inline-block;
-  box-sizing: border-box;
   width: 150px;
   height: 45px;
   padding-top: 14px;
@@ -616,7 +661,6 @@ main .index-columns {
 
 .main-footer-logo {
   display: block;
-  box-sizing: border-box;
   width: 220px;
   height: 68px;
   padding-top: 20px;
@@ -716,7 +760,6 @@ main .index-columns {
 }
 
 .main-footer-bottom .copyright {
-  box-sizing: border-box;
   width: 228px;
   margin: 0;
   margin-right: 161px;
