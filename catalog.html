@@ -26,9 +26,9 @@
       </nav>
       <div class="top-panel">
         <div class="container">
-          <!-- <a class="main-header-logo" href="index.html">
+          <a class="main-header-logo" href="index.html">
             <img src="img/technomart-logo-small.png" width="109" height="19"
-              alt="Логотип интернет-магазина «Техномарт»" /></a> -->
+              alt="Логотип интернет-магазина «Техномарт»" /></a>
           <p class="search-term">
             <svg class="icon-search" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewbox="0 0 17 17"
@@ -51,6 +51,7 @@
         </div>
       </div>
       <div class="container">
+        <!-- TODO: Wrap into intro panel to maintain the following flex order from top to bottom: top panel, intro, navigation -->
         <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта </p>
         <div class="contact-details">
           <a class="phone" href="tel:+78125550555">+7 (812)555-05-55</a>
@@ -59,7 +60,7 @@
         <div class="logged-in-panel">
           <div class="button-logged-in">
             <a class="user-name" href="profile.html">Равшан Джумшутович</a>
-            <a href="logout.html" aria-label="Выйти"></a>
+            <a class="logout" href="logout.html" aria-label="Выйти"></a>
           </div>
           <ul class="personal-list">
             <li class="personal-item"><a href="">Мои заказы</a></li>
@@ -71,6 +72,7 @@
     <main class="container main-catalog">
       <h1 class="page-title">Перфораторы</h1>
       <ul class="breadcrumbs">
+        <li><a href="index.html"></a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="">Инструменты</a></li>
         <li><a class="breadcrumbs-current">Перфораторы</a></li>
