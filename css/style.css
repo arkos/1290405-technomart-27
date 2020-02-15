@@ -134,12 +134,14 @@ input[type="radio"].visually-hidden {
 .top-panel {
   order: -2;
   width: 100%;
-  margin-bottom: 47px;
+  /* margin-bottom: 47px; */
   padding: 0 10px;
 
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+
+  /* height: 42px; */
 
   background-color: #293449;
 }
@@ -224,16 +226,18 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 270px;
   position: relative;
+  padding-left: 49px;
 }
 
-.search-term label {}
+.top-panel .search-term:active {
+  background-color: #ffffff;
+}
 
 .search-term input {
   border: none;
   background-color: transparent;
   padding-top: 14px;
   padding-bottom: 13px;
-  padding-left: 49px;
   width: 100%;
 }
 
@@ -241,18 +245,30 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.top-panel .search-term::before {
-  content: "";
+.search-term input:focus {
+  background-color: #ffffff;
+}
+
+.search-term .icon-search {
   position: absolute;
   top: 12px;
   left: 17px;
   width: 17px;
   height: 17px;
+}
 
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.search-term path {
+  fill: #ffffff;
   opacity: 0.3;
+}
+
+.search-term:hover path,
+.search-term:focus path {
+  opacity: 1;
+}
+
+.icon-search+input:focus path {
+  fill: #ff0000;
 }
 
 .top-panel .search-term:hover,
@@ -311,19 +327,6 @@ input[type="radio"].visually-hidden {
 
 .logged-in-panel {
   width: 299px;
-}
-
-.button-phone {
-  display: block;
-  width: 270px;
-  height: 45px;
-  margin-bottom: 10px;
-  padding-top: 13px;
-  padding-bottom: 11px;
-
-  text-align: center;
-
-  border: solid 3px #ffffff;
 }
 
 main .index-columns {
@@ -608,7 +611,6 @@ main .index-columns {
 
 .main-header-logo {
   display: inline-block;
-  display: none;
   width: 220px;
   height: 47px;
 
@@ -624,10 +626,14 @@ main .index-columns {
   background-color: #ca2c37;
 }
 
-.main-header-description {
+.description {
   width: 196px;
   margin: 0;
   padding: 0;
+  margin-top: 49px;
+  margin-left: 53px;
+  margin-right: 71px;
+  margin-bottom: 44px;
 
   font-style: italic;
   font-size: 16px;
@@ -635,18 +641,21 @@ main .index-columns {
   color: #ee3643;
 }
 
-.main-header-contact-details {
-  margin: 0;
-  padding: 0;
+.contact-details {
+  margin-top: 47px;
 }
 
-.main-header-contact-details a {
-  font-size: 21px;
-  line-height: 21px;
-  color: #ee3643;
+.contact-details .phone {
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-right: 45px;
+  padding-left: 74px;
+  border: 3px solid #ffffff;
 }
 
-.main-header-contact-details .contact-address {
+.contact-details .address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
