@@ -782,7 +782,6 @@ main .index-columns {
 .filter-option {
   margin-bottom: 20px;
   padding-left: 35px;
-  outline: 1px solid green;
 }
 
 .filter-option label {
@@ -792,18 +791,40 @@ main .index-columns {
   user-select: none;
 }
 
-.filter-option label::before {
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
   top: 0;
   left: -32px;
-
-  border: 2px solid #000000;
+  background-image: url("../img/checkbox-normal-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 23px;
+  height: 23px;
 }
 
+.filter-input-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-normal-on.svg");
+  width: 27px;
+}
 
+.filter-input-checkbox:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-hover-off.svg");
+}
+
+.filter-input-checkbox:hover:checked + label::before,
+.filter-input-checkbox:checked:disabled + label::before {
+  background-image: url("../img/checkbox-hover-on.svg");
+}
 
 .filter-button {
   font: inherit;
