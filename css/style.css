@@ -876,13 +876,14 @@ main .index-columns {
   font: inherit;
   font-size: 13px;
   line-height: 18px;
-  vertical-align: middle;
-  text-align: center;
+  margin-top: 22px;
   color: #000000;
   text-transform: uppercase;
 
   background-color: #ffffff;
-  border: none;
+  border: 1px solid #e5e5e5;
+  font-family: 'PT Sans', Arial, sans-serif;
+  padding: 9px 39px 9px 39px;
 }
 
 .catalog-items {
