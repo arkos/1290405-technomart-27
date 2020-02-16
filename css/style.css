@@ -11,6 +11,8 @@ body {
   background-color: white;
 }
 
+/* TODO: All navigations should have flex wrap   */
+
 img {
   max-width: 100%;
   height: auto;
@@ -537,14 +539,18 @@ input[type="radio"].visually-hidden {
   width: 547px;
   margin: 0;
   padding: 0;
-
+  display: flex;
   list-style: none;
 }
+
 
 .main-footer-features-list a {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
+  display: block;
+  margin-top: 35px;
+  margin-right: 20px;
 }
 
 .main-footer-features-list a:hover,
