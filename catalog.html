@@ -13,6 +13,7 @@
 
   <body>
     <header class="main-header">
+      <!-- TODO: Change to "main-navigation container" -->
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
@@ -72,7 +73,7 @@
     <main class="container main-catalog">
       <h1 class="page-title">Перфораторы</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html"></a></li>
+        <li><a href="index.html" aria-label="Главная"></a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="">Инструменты</a></li>
         <li><a class="breadcrumbs-current">Перфораторы</a></li>
@@ -88,27 +89,28 @@
                   <label><input type="checkbox" name="bosch" class="visually-hidden filter-input filter-input-checkbox"
                       checked>Bosch</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <label><input type="checkbox" class="visually-hidden filter-input filter-input-checkbox"
                       name="interskol">Интерскол</label>
                 </li>
-                <li><label><input type="checkbox" name="makita"
-                      class="visually-hidden filter-input filter-input-checkbox" checked>Makita</label></li>
-                <li><label><input type="checkbox" name="dewalt"
+                <li class="filter-option">
+                  <label><input type="checkbox" name="makita" class="visually-hidden filter-input filter-input-checkbox"
+                      checked>Makita</label></li>
+                <li class="filter-option"><label><input type="checkbox" name="dewalt"
                       class="visually-hidden filter-input filter-input-checkbox">Dewalt</label></li>
-                <li><label><input type="checkbox" name="hitachi"
+                <li class="filter-option"><label><input type="checkbox" name="hitachi"
                       class="visually-hidden filter-input filter-input-checkbox">Hitachi</label></li>
               </ul>
             </fieldset>
             <fieldset class="power-type">
               <legend>Питание:</legend>
               <ul class="filter-power">
-                <li>
+                <li class="filter-option">
                   <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
                     id="power-type-battery-field" value="battery">
                   <label for="power-type-battery-field">Аккумуляторные</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input type="radio" name="power-type-group" class="visually-hidden filter-input filter-input-radio"
                     id="power-type-plugin-field" value="plugin">
                   <label for="power-type-plugin-field">Сетевые</label>

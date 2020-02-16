@@ -232,7 +232,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.icon-search+input:focus path {
+.icon-search + input:focus path {
   fill: #ff0000;
 }
 
@@ -699,11 +699,11 @@ main .index-columns {
   text-transform: uppercase;
 }
 
-.breadcrumbs li+li {
+.breadcrumbs li + li {
   padding-left: 20px;
 }
 
-.breadcrumbs li+li:before {
+.breadcrumbs li + li:before {
   content: "";
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
@@ -713,6 +713,8 @@ main .index-columns {
   padding-left: 20px;
 }
 
+/* TODO: Change to select using class */
+
 .breadcrumbs li:first-child a {
   content: "";
   display: block;
@@ -721,6 +723,10 @@ main .index-columns {
   background-position: 0 0;
   width: 14px;
   height: 12px;
+}
+
+.breadcrumbs a {
+  color: #000000;
 }
 
 .page-title {
@@ -744,6 +750,9 @@ main .index-columns {
 
 .product-filters fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 44px;
 }
 
 .product-filters legend {
@@ -752,11 +761,14 @@ main .index-columns {
   line-height: 30px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .filter-brands,
 .filter-power {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-brands label,
@@ -766,6 +778,32 @@ main .index-columns {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
+
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 35px;
+  outline: 1px solid green;
+}
+
+.filter-option label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-option label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: -32px;
+
+  border: 2px solid #000000;
+}
+
+
 
 .filter-button {
   font: inherit;
