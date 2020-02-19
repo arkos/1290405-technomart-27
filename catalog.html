@@ -60,8 +60,8 @@
         </div>
         <div class="logged-in-panel">
           <div class="button-logged-in">
-            <a class="user-name" href="profile.html">Равшан Джумшутович</a>
-            <a class="logout" href="logout.html" aria-label="Выйти"></a>
+            <a class="button-secondary user-name" href="profile.html">Равшан Джумшутович</a>
+            <a class="button-secondary logout" href="logout.html" aria-label="Выйти"></a>
           </div>
           <ul class="personal-list">
             <li class="personal-item"><a href="">Мои заказы</a></li>
@@ -259,11 +259,12 @@
           </ul>
         </section>
       </div>
-      <section class="modal modal-product-added">
+      <section class="modal modal-dialog modal-product-added">
         <h2>Товар добавлен в корзину!</h2>
-        <a class="button" href="">Оформить заказ</a>
-        <button type="button" class="button button-return">Продолжить покупки</button>
-        <!-- <button type="button" class="modal-close"></button> -->
+        <div class="modal-footer">
+          <a class="button button-primary" href="">Оформить заказ</a>
+          <button type="button" class="button button-secondary">Продолжить покупки</button>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
