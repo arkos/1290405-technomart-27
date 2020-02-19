@@ -64,33 +64,36 @@
             <li class="feature-item">Автотрейдинг</li>
             <li class="feature-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="" class="button">Подробнее о компании</a>
+          <a href="" class="button button-primary">Подробнее о компании</a>
         </section>
         <section class="contact-info">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a href="#"><img src="img/address-map.jpg" width="300" height="158"
               alt="Офис интернет-магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" /></a>
-          <a href="" class="button">Заблудились? Напишите нам!</a>
+          <a href="" class="button button-primary">Заблудились? Напишите нам!</a>
         </section>
       </div>
-      <section class="modal modal-contact">
+      <section class="modal modal-dialog modal-contact">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="contact-item">
-            <label for="fullname-field">Ваше имя:</label>
-            <input type="text" name="fullname" id="fullname-field" placeholder="Имя Фамилия" />
-          </p>
-          <p class="contact-item">
-            <label for="email-field">Ваш e-mail:</label>
-            <input type="email" name="email" id="email-field" placeholder="email@example.com" />
-          </p>
-          <p class="contact-item">
-            <label for="comments-field">Текст письма:</label>
-            <textarea name="comments" rows="4" placeholder="В свободной форме" id="comments-field"></textarea>
-          </p>
-          <button type="submit" class="button">Отправить</button>
-          <button type="button" class="modal-close"></button>
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal-container">
+            <p class="contact-item">
+              <label class="label-name" for="fullname-field">Ваше имя:</label>
+              <input type="text" name="fullname" id="fullname-field" placeholder="Имя Фамилия" />
+            </p>
+            <p class="contact-item">
+              <label for="email-field">Ваш e-mail:</label>
+              <input type="email" name="email" id="email-field" placeholder="email@example.com" />
+            </p>
+            <p class="contact-item">
+              <label for="comments-field">Текст письма:</label>
+              <textarea name="comments" rows="4" placeholder="В свободной форме" id="comments-field"></textarea>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="button button-primary">Отправить</button>
+          </div>
         </form>
       </section>
       <section class="modal modal-map">
@@ -99,7 +102,6 @@
           <img src="img/address-map-big.jpg" width="940" height="446"
             alt="Офис интернет-магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" />
         </p>
-        <button type="button" class="modal-close"></button>
       </section>
     </main>
     <footer class="main-footer">
