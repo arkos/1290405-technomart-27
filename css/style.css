@@ -1128,10 +1128,30 @@ main .index-columns {
   padding: 0;
 }
 
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .features-list .feature-item {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 36px;
+}
+
+.features-list .feature-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 2px;
+  top: 8px;
+  left: -36px;
+  background-color: #ee3643;
 }
 
 .contact-info {
