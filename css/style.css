@@ -56,14 +56,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.modal {
-  /* display: none; */
-}
-
-.modal-map {
-  display: none;
-}
-
 /* -----------------------------------index.html */
 
 .main-header {
@@ -1196,6 +1188,10 @@ main .index-columns {
   justify-content: space-between;
 }
 
+.modal-contact {
+  display: none;
+}
+
 .modal-contact input,
 .modal-contact textarea {
   padding-top: 8px;
@@ -1293,6 +1289,9 @@ main .index-columns {
   left: 81px;
 }
 
+.modal-map {
+  width: 940px;
+}
 
 
 /* Common styles */
