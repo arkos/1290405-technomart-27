@@ -288,20 +288,41 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 121px;
   height: 45px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 11px;
+  padding-left: 48px;
 
   text-align: center;
 
   background-color: #ffffff;
+  position: relative;
 }
+
+.user-navigation .login-link::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  left: 14px;
+  background-image: url("../img/icon-login.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.login-link:hover::before {
+  opacity: 1;
+}
+
 
 .user-navigation .signup-link {
   display: inline-block;
   width: 150px;
   height: 45px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 11px;
+  padding-left: 25px;
 
   text-align: center;
 
@@ -345,13 +366,14 @@ input[type="radio"].visually-hidden {
 }
 
 .description {
-  width: 196px;
   margin: 0;
-  margin-top: 46px;
-  margin-right: 71px;
+  margin-top: 49px;
+  margin-right: 69px;
   margin-bottom: 44px;
   margin-left: 53px;
   padding: 0;
+  width: 196px;
+  height: 60px;
 
   font-style: italic;
   font-size: 16px;
@@ -360,7 +382,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-details {
-  margin-top: 47px;
+  margin-top: 42px;
 }
 
 .contact-details .phone {
@@ -370,7 +392,7 @@ input[type="radio"].visually-hidden {
   margin-right: 51px;
   padding-top: 13px;
   padding-right: 54px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   padding-left: 74px;
 
   font-size: 21px;
@@ -378,6 +400,7 @@ input[type="radio"].visually-hidden {
   color: #e9292a;
 
   border: 3px solid #ffffff;
+  outline: 2px solid green;
 }
 
 .contact-details .phone::before {
@@ -398,6 +421,8 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  margin-left: 12px;
+  margin-top:2px;
 }
 
 .logged-in-panel {
@@ -469,6 +494,8 @@ input[type="radio"].visually-hidden {
   margin-right: 32px;
 
   list-style: none;
+  margin-left: 14px;
+  margin-top: 45px;
 }
 
 .site-navigation {
@@ -486,6 +513,10 @@ input[type="radio"].visually-hidden {
 .site-navigation,
 .user-navigation {
   list-style: none;
+  margin: 0;
+  margin-top: 45px;
+  margin-left: 12px;
+  padding: 0;
 }
 
 .site-navigation a {
