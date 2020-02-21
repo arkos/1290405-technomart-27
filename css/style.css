@@ -74,6 +74,7 @@ input[type="radio"].visually-hidden {
   line-height: 17px;
   color: #ffffff;
   order: 1;
+  width: 940px;
 
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
@@ -82,7 +83,6 @@ input[type="radio"].visually-hidden {
 .top-panel {
   order: -2;
   width: 100%;
-  padding: 0 10px;
 
   font-size: 17px;
   line-height: 18px;
@@ -269,14 +269,22 @@ input[type="radio"].visually-hidden {
   background-color: #161d29;
 }
 
+.site-navigation,
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .user-navigation {
   display: flex;
   justify-content: space-between;
   width: 281px;
+  margin-top: 45px;
+  margin-left: 12px;
 
   list-style: none;
 }
-
 
 .user-navigation .login-link,
 .user-navigation .signup-link {
@@ -365,11 +373,11 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.description {
+.intro-desc {
   margin: 0;
   margin-top: 49px;
   margin-right: 69px;
-  margin-bottom: 44px;
+  margin-bottom: 50px;
   margin-left: 53px;
   padding: 0;
   width: 196px;
@@ -400,7 +408,6 @@ input[type="radio"].visually-hidden {
   color: #e9292a;
 
   border: 3px solid #ffffff;
-  outline: 2px solid green;
 }
 
 .contact-details .phone::before {
@@ -501,30 +508,18 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0;
-  padding: 0;
-  padding-right: 55px;
-  padding-left: 52px;
-
+  padding: 0 10px;
   list-style: none;
-}
-
-.site-navigation,
-.user-navigation {
-  list-style: none;
-  margin: 0;
-  margin-top: 45px;
-  margin-left: 12px;
-  padding: 0;
 }
 
 .site-navigation a {
   display: block;
-  padding-top: 22px;
-  padding-right: 30px;
-  padding-bottom: 26px;
-  padding-left: 30px;
+  padding-top: 19px;
+  padding-right: 29px;
+  padding-bottom: 23px;
+  padding-left: 32px;
 
   color: #ffffff;
 }
@@ -1328,8 +1323,8 @@ main .index-columns {
   left: 81px;
 }
 
-.modal-map {
-  width: 940px;
+.modal-map p {
+  margin: 0;
 }
 
 
