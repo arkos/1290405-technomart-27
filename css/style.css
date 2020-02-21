@@ -741,11 +741,12 @@ main .index-columns {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   order: -1;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 21px;
+  padding-top: 24px;
+  padding-bottom: 18px;
 
   list-style: none;
   font-size: 13px;
@@ -755,7 +756,7 @@ main .index-columns {
 }
 
 .breadcrumbs li + li {
-  padding-left: 20px;
+  padding-left: 26px;
 }
 
 .breadcrumbs li + li:before {
@@ -763,7 +764,7 @@ main .index-columns {
 
   width: 8px;
   height: 12px;
-  padding-left: 20px;
+  padding-left: 15px;
 
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
@@ -1325,6 +1326,10 @@ main .index-columns {
 
 .modal-map p {
   margin: 0;
+}
+
+.modal-map img {
+  display: block;
 }
 
 
