@@ -727,7 +727,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 132px;
   margin: 0 auto;
-  margin-right: 134px;
+  margin-right: 119px;
   padding: 0;
 
   list-style: none;
@@ -801,6 +801,7 @@ input[type="radio"].visually-hidden {
 .footer-contact-dev:last-of-type {
   width: 96px;
   margin: 0;
+  margin-right: 15px;
   padding: 0;
 }
 
@@ -1463,6 +1464,7 @@ main .index-columns {
 
 .modal-product-added {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .modal-product-added .modal-footer {
@@ -1474,9 +1476,9 @@ main .index-columns {
 
 
 .modal-product-added h2 {
-  margin-top: 70px;
+  margin-top: 64px;
   margin-right: 125px;
-  margin-bottom: 55px;
+  margin-bottom: 67px;
   margin-left: 179px;
 
   font-weight: 400;
@@ -1487,7 +1489,7 @@ main .index-columns {
 .modal-product-added::after {
   content: "";
   position: absolute;
-  top: 55px;
+  top: 47px;
   left: 81px;
 
   width: 66px;
