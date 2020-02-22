@@ -358,8 +358,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.login-link:hover::before {
+.login-link:hover::before,
+.login-link:focus::before {
   opacity: 1;
+}
+
+.login-link:active::before {
+  opacity: 0.3;
 }
 
 
@@ -499,6 +504,15 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
 }
 
+.button-logged-in .user-name:hover,
+.button-logged-in .user-name:focus {
+  color: #000000;
+}
+
+.button-logged-in .user-name:active {
+  opacity: 0.3;
+}
+
 .button-logged-in .user-name::before {
   content: "";
   position: absolute;
@@ -514,6 +528,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.button-logged-in .user-name:hover::before,
+.button-logged-in .user-name:focus::before {
+  opacity: 1;
+}
+
+
 .button-logged-in .logout {
   display: block;
   width: 20px;
@@ -522,6 +542,15 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.3;
+}
+
+.user-name:hover + .logout,
+.user-name:focus + .logout {
+  opacity: 1;
+}
+
+.user-name:active + .logout {
   opacity: 0.3;
 }
 
@@ -540,10 +569,18 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+.personal-list a:hover,
+.personal-list a:focus {
+  color: #ee3643;
+}
+
+.personal-list a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
 .personal-list li:first-child {
   margin-right: 32px;
   margin-left: 14px;
-
   list-style: none;
 }
 
