@@ -625,6 +625,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer-top {
   background-color: #32425c;
+  padding-bottom: 50px;
 }
 
 
@@ -647,8 +648,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer-features-list a {
   display: block;
-  margin-top: 35px;
-  margin-right: 60px;
+  margin-top: 37px;
+  margin-right: 59px;
 
   font-size: 18px;
   line-height: 24px;
@@ -684,8 +685,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer-product-list a {
   display: block;
-  margin-top: 11px;
-  margin-right: 60px;
+  margin-top: 10px;
+  margin-right: 59px;
 
   font-size: 18px;
   line-height: 24px;
@@ -715,6 +716,7 @@ input[type="radio"].visually-hidden {
 .main-footer-bottom .copyright {
   width: 228px;
   margin: 0;
+  margin-left: 2px;
   margin-right: 161px;
   padding: 0;
 }
@@ -725,7 +727,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 132px;
   margin: 0 auto;
-  margin-right: 119px;
+  margin-right: 134px;
   padding: 0;
 
   list-style: none;
@@ -752,7 +754,7 @@ input[type="radio"].visually-hidden {
 .footer-site-navigation {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 17px;
 }
 
 .footer-categories {
@@ -761,7 +763,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-categories p {
-  width: 322px;
+  margin: 0;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 325px;
 }
 
 .footer-contact-dev b {
@@ -1491,6 +1496,10 @@ main .index-columns {
   background-image: url("../img/icon-modal-check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.modal-map {
+  display: none;
 }
 
 .modal-map p {
