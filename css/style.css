@@ -744,22 +744,44 @@ main .index-columns {
   flex-wrap: wrap;
   order: -1;
   margin: 0;
+  margin-top: 21px;
   padding: 0;
-  padding-top: 24px;
-  padding-bottom: 18px;
 
   list-style: none;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+
+  /* temp */
+  /* outline: 1px solid green; */
+  margin-bottom: 20px;
 }
 
-.breadcrumbs li + li {
-  padding-left: 26px;
+.breadcrumbs li {
+  margin-right: 41px;
+  position: relative;
+  /* temp */
+  /* outline: 2px solid red; */
 }
 
-.breadcrumbs li + li:before {
+  /* .breadcrumbs li + li {
+    padding-left: 26px;
+  } */
+
+  .breadcrumbs li::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    top:2;
+    right: -24px;
+    background-image: url("../img/icon-right-small.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+/* .breadcrumbs li + li:before {
   content: "";
 
   width: 8px;
@@ -769,11 +791,11 @@ main .index-columns {
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+} */
 
 /* TODO: Change to select using class */
 
-.breadcrumbs li:first-child a {
+.breadcrumbs li.icon-home {
   content: "";
 
   display: block;
@@ -792,9 +814,9 @@ main .index-columns {
 .page-title {
   margin: 0;
   padding: 0;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 34px;
-  padding-left: 30px;
+  padding-left: 28px;
 
   font-size: 30px;
   line-height: 30px;
