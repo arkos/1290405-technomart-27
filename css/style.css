@@ -894,6 +894,7 @@ main .index-columns {
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 .breadcrumbs a {
@@ -1469,7 +1470,7 @@ main .index-columns {
 
 .modal-product-added .modal-footer {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   height: auto;
   padding: 37px 80px;
 }
@@ -1568,8 +1569,19 @@ main .index-columns {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-footer .button-primary {
+  padding-left: 59px;
+  padding-right: 62px;
+  margin-right: 51px;
+  padding-top: 12px;
+}
+
 .modal-footer .button-secondary {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 44px;
+  text-align: center;
+  padding-right: 47px;
+  margin-left: -31px;
 }
