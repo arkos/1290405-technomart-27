@@ -1309,6 +1309,24 @@ main .index-columns {
   padding: 0;
 }
 
+.features h2 {
+  text-transform: uppercase;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features p:first-of-type {
+  margin-bottom: 24px;
+
+}
+
+.features p:nth-of-type(2) {
+  width: 446px;
+  margin-bottom: 21px;
+}
+
 .features-list {
   margin: 0;
   padding: 0;
@@ -1340,10 +1358,37 @@ main .index-columns {
   background-color: #ee3643;
 }
 
+.features-list .feature-item:last-of-type {
+  margin-bottom: 36px;
+}
+
+.features .button-primary {
+  padding-left: 41px;
+  padding-right: 40px;
+  padding-top: 11px;
+}
+
 .contact-info {
   width: 300px;
   margin: 0;
   padding: 0;
+}
+
+.contact-info h2 {
+  text-transform: uppercase;
+}
+
+.contact-info p {
+  width: 185px;
+  margin-bottom: 31px;
+}
+
+.contact-info .button-primary {
+  margin-top: 33px;
+  padding-left: 64px;
+  padding-right: 59px;
+  padding-top: 11px;
+  margin-right: 0;
 }
 
 
