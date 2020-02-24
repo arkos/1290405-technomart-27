@@ -1738,17 +1738,81 @@ main .index-columns {
   background-color: rgb(0, 0, 0, 0.3);
 }
 
-.card-list .card-image {
+.card-list .slider {
   width: 620px;
   margin-bottom: 20px;
   margin-right: 20px;
+  position: relative;
+  color: #ffffff;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 27px;
+  padding-bottom: 22px;
 
   /* temp */
   min-height: 266px;
   outline: 1px solid blue;
 }
 
-.card-image + .card-item {
+.slider.slider-hidden {
+  display: none;
+}
+
+.card-list .slider:last-child {
+  margin: 0;
+}
+
+.slider p {
+  margin: 0;
+}
+
+.slider h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider .description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 620px;
+  height: 266px;
+  z-index: -1;
+}
+
+.slider .button-primary {
+  margin-top: 119px;
+}
+
+.slider::before {
+  content: "";
+  width: 22px;
+  height: 40px;
+  top: calc(50% - 20px);
+  left: 22px;
+  position: absolute;
+  background-image: url("../img/icon-left.svg");
+}
+
+.slider::after {
+  content: "";
+  width: 22px;
+  height: 40px;
+  top: calc(50% - 20px);
+  right: 20px;
+  position: absolute;
+  background-image: url("../img/icon-right.svg");
+}
+
+.slider + .card-item {
   margin-right: 0;
 }
 
