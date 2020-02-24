@@ -147,6 +147,7 @@ input[type="radio"].visually-hidden {
 
 .top-panel .bookmarks-link:active {
   color: rgba(255, 255, 255, 0.6);
+
   background-color: #161d29;
 }
 
@@ -196,6 +197,7 @@ input[type="radio"].visually-hidden {
 
 .top-panel .cart-empty:active {
   color: rgba(255, 255, 255, 0.6);
+
   background-color: #161d29;
 }
 
@@ -338,6 +340,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 11px;
   padding-left: 48px;
 
+  vertical-align: middle;
   text-align: center;
 
   background-color: #ffffff;
@@ -376,6 +379,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 11px;
   padding-left: 25px;
 
+  vertical-align: middle;
   text-align: center;
 
   background-color: #ffffff;
@@ -581,6 +585,7 @@ input[type="radio"].visually-hidden {
 .personal-list li:first-child {
   margin-right: 32px;
   margin-left: 14px;
+
   list-style: none;
 }
 
@@ -624,8 +629,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-top {
-  background-color: #32425c;
   padding-bottom: 50px;
+
+  background-color: #32425c;
 }
 
 
@@ -716,8 +722,8 @@ input[type="radio"].visually-hidden {
 .main-footer-bottom .copyright {
   width: 228px;
   margin: 0;
-  margin-left: 2px;
   margin-right: 161px;
+  margin-left: 2px;
   padding: 0;
 }
 
@@ -763,10 +769,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-categories p {
-  margin: 0;
-  margin-left: 3px;
-  margin-top: 10px;
   width: 325px;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 3px;
 }
 
 .footer-contact-dev b {
@@ -1017,7 +1023,6 @@ main .index-columns {
   height: 25px;
 
   border: 4px solid #c5c5c5;
-
   border-radius: 50%;
 }
 
@@ -1197,8 +1202,8 @@ main .index-columns {
   left: 0;
   z-index: 10;
   /* temp */
-  display: none;
 
+  display: none;
   order: -1;
   width: 218px;
   height: 170px;
@@ -1240,6 +1245,7 @@ main .index-columns {
 
   padding-top: 10px;
   padding-left: 3px;
+
   box-shadow: inset 0 -3px 0 0 #367315;
 }
 
@@ -1287,8 +1293,8 @@ main .index-columns {
 
 .actions .bookmark:active {
   color: rgba(50, 66, 92);
-  opacity: 0.3;
 
+  opacity: 0.3;
 }
 
 .index-columns h2 {
@@ -1319,7 +1325,6 @@ main .index-columns {
 
 .features p:first-of-type {
   margin-bottom: 24px;
-
 }
 
 .features p:nth-of-type(2) {
@@ -1363,9 +1368,9 @@ main .index-columns {
 }
 
 .features .button-primary {
-  padding-left: 41px;
-  padding-right: 40px;
   padding-top: 11px;
+  padding-right: 40px;
+  padding-left: 41px;
 }
 
 .contact-info {
@@ -1385,10 +1390,10 @@ main .index-columns {
 
 .contact-info .button-primary {
   margin-top: 33px;
-  padding-left: 64px;
-  padding-right: 59px;
-  padding-top: 11px;
   margin-right: 0;
+  padding-top: 11px;
+  padding-right: 59px;
+  padding-left: 64px;
 }
 
 
@@ -1498,16 +1503,16 @@ main .index-columns {
 }
 
 .contact-item input {
-  padding-left: 11px;
   padding-top: 9px;
   padding-bottom: 8px;
+  padding-left: 11px;
 }
 
 .contact-item textarea {
   width: 460px;
-  padding-left: 12px;
   padding-top: 5px;
   padding-bottom: 15px;
+  padding-left: 12px;
 }
 
 
@@ -1517,11 +1522,11 @@ main .index-columns {
 }
 
 .modal-contact .modal-footer {
+  margin-top: 12px;
   padding-top: 39px;
+  padding-right: 80px;
   padding-bottom: 37px;
   padding-left: 80px;
-  padding-right: 80px;
-  margin-top: 12px;
 }
 
 .modal-contact .button {
@@ -1534,6 +1539,7 @@ main .index-columns {
 
 .modal-product-added {
   position: relative;
+
   margin-bottom: 20px;
 }
 
@@ -1594,6 +1600,7 @@ main .index-columns {
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
 
@@ -1623,6 +1630,7 @@ main .index-columns {
 
   font-size: 21px;
   line-height: 21px;
+  vertical-align: middle;
   color: #000000;
   text-transform: none;
 
@@ -1639,28 +1647,28 @@ main .index-columns {
 }
 
 .modal-footer .button-primary {
-  padding-left: 59px;
-  padding-right: 62px;
   margin-right: 51px;
   padding-top: 12px;
+  padding-right: 62px;
+  padding-left: 59px;
 }
 
 .modal-footer .button-secondary {
+  margin-left: -31px;
+  padding-right: 47px;
+  padding-left: 44px;
+
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
-  padding-left: 44px;
   text-align: center;
-  padding-right: 47px;
-  margin-left: -31px;
+  text-transform: uppercase;
 }
 
 .modal-contact .button-primary {
   padding-top: 10px;
+  padding-right: 201px;
   padding-bottom: 9px;
   padding-left: 198px;
-  padding-right: 201px;
-
 }
 
 /* extra */
@@ -1668,28 +1676,29 @@ main .index-columns {
 /* CARDS */
 
 .card-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   margin-top: 59px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .card-list .card-item {
-  width: 300px;
   position: relative;
 
-  margin-bottom: 20px;
-  margin-right: 20px;
-  color: #ffffff;
-
-  /* common style? */
-  padding-left: 23px;
-  padding-top: 26px;
-
+  width: 300px;
   /* temp */
   min-height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 26px;
+  /* common style? */
+  padding-left: 23px;
+
+  color: #ffffff;
+
   outline: 1px solid green;
 }
 
@@ -1702,30 +1711,35 @@ main .index-columns {
   position: absolute;
   top: 33px;
   right: 28px;
+
   width: 73px;
   height: 63px;
+
   background-image: url("../img/icon-card-1.svg");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .card-item h2 {
   margin: 0;
+
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
 }
 
 .card-item a {
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  background-color: rgb(0, 0, 0, 0.1);
   color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: rgb(0, 0, 0, 0.1);
   /* opacity: 0.1; */
 }
 
@@ -1739,18 +1753,20 @@ main .index-columns {
 }
 
 .card-list .slider {
-  width: 620px;
-  margin-bottom: 20px;
-  margin-right: 20px;
   position: relative;
-  color: #ffffff;
-  padding-left: 25px;
-  padding-right: 20px;
-  padding-top: 27px;
-  padding-bottom: 22px;
 
+  width: 620px;
   /* temp */
   min-height: 266px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 27px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+
+  color: #ffffff;
+
   outline: 1px solid blue;
 }
 
@@ -1768,6 +1784,7 @@ main .index-columns {
 
 .slider h2 {
   margin: 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -1783,9 +1800,10 @@ main .index-columns {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+
   width: 620px;
   height: 266px;
-  z-index: -1;
 }
 
 .slider .button-primary {
@@ -1793,24 +1811,28 @@ main .index-columns {
 }
 
 .slider .slider-button {
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
   content: "";
+  position: absolute;
+
   width: 22px;
   height: 40px;
-  position: absolute;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .slider .slider-left {
   top: calc(50% - 20px);
   left: 22px;
+
   background-image: url("../img/icon-left.svg");
 }
 
 .slider .slider-right {
   top: calc(50% - 20px);
   right: 20px;
+
   background-image: url("../img/icon-right.svg");
 }
 
@@ -1825,8 +1847,10 @@ main .index-columns {
 .card-item.card-1::after {
   top: 31px;
   right: 43px;
+
   width: 44px;
   height: 65px;
+
   background-image: url("../img/icon-card-1.svg");
 }
 
@@ -1837,8 +1861,10 @@ main .index-columns {
 .card-item.card-2::after {
   top: 33px;
   right: 28px;
+
   width: 75px;
   height: 61px;
+
   background-image: url("../img/icon-card-2.svg");
 }
 
@@ -1849,8 +1875,10 @@ main .index-columns {
 .card-item.card-3::after {
   top: 31px;
   right: 31px;
+
   width: 78px;
   height: 62px;
+
   background-image: url("../img/icon-card-3.svg");
 }
 
@@ -1861,8 +1889,10 @@ main .index-columns {
 .card-item.card-4::after {
   top: 26px;
   right: 45px;
+
   width: 59px;
   height: 72px;
+
   background-image: url("../img/icon-card-4.svg");
 }
 
@@ -1873,7 +1903,9 @@ main .index-columns {
 .card-item.card-5::after {
   top: 32px;
   right: 31px;
+
   width: 78px;
   height: 63px;
+
   background-image: url("../img/icon-card-5.svg");
 }
