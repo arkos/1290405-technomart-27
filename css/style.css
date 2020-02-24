@@ -1685,6 +1685,18 @@ main .index-columns {
   list-style: none;
 }
 
+.card-list:first-child {
+  flex-direction: row;
+}
+
+.card-list:last-child {
+  flex-direction: column;
+}
+
+.card-list:last-child li {
+  margin-right: 0;
+}
+
 .card-list .card-item {
   position: relative;
 
@@ -1908,4 +1920,9 @@ main .index-columns {
   height: 63px;
 
   background-image: url("../img/icon-card-5.svg");
+}
+
+.cards .layout-columns {
+  display: flex;
+  flex-direction: row;
 }
