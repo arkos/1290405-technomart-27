@@ -1792,23 +1792,25 @@ main .index-columns {
   margin-top: 119px;
 }
 
-.slider::before {
+.slider .slider-button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
   content: "";
   width: 22px;
   height: 40px;
+  position: absolute;
+}
+
+.slider .slider-left {
   top: calc(50% - 20px);
   left: 22px;
-  position: absolute;
   background-image: url("../img/icon-left.svg");
 }
 
-.slider::after {
-  content: "";
-  width: 22px;
-  height: 40px;
+.slider .slider-right {
   top: calc(50% - 20px);
   right: 20px;
-  position: absolute;
   background-image: url("../img/icon-right.svg");
 }
 
