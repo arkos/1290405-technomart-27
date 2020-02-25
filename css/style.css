@@ -1925,7 +1925,7 @@ main .index-columns {
 
 /* POPULAR PRODUCTS */
 
-.popular-products .popular-products-header {
+.popular-products .popular-header {
   background-color: #f9f5f0;
   padding-top: 25px;
   padding-bottom: 26px;
@@ -1934,9 +1934,10 @@ main .index-columns {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.popular-products .popular-products-title {
+.popular-products .popular-title {
   color: #32425c;
   font-size: 30px;
   line-height: 30px;
@@ -1944,12 +1945,25 @@ main .index-columns {
   font-weight: 400;
   margin: 0;
   margin-left: 5px;
+
 }
 
-.popular-products-header a {
+.popular-header a {
   padding-left: 55px;
   padding-right: 55px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-right: 0;
+}
+
+.popular-products .catalog-items {
+  width: 100%;
+}
+
+.popular-products .catalog-item {
+  margin-right: 20px;
+}
+
+.popular-products .catalog-item:nth-child(4n) {
   margin-right: 0;
 }
