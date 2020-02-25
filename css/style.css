@@ -838,8 +838,6 @@ main .index-columns {
   order: -1;
   margin: 0;
   margin-top: 21px;
-  /* temp */
-  /* outline: 1px solid green; */
   margin-bottom: 20px;
   padding: 0;
 
@@ -854,13 +852,7 @@ main .index-columns {
   position: relative;
 
   margin-right: 41px;
-  /* temp */
-  /* outline: 2px solid red; */
 }
-
-/* .breadcrumbs li + li {
-    padding-left: 26px;
-  } */
 
 .breadcrumbs li::after {
   content: "";
@@ -1201,7 +1193,6 @@ main .index-columns {
   top: 0;
   left: 0;
   z-index: 10;
-  /* temp */
 
   display: none;
   order: -1;
@@ -1432,7 +1423,6 @@ main .index-columns {
 .contact-item input {
   background-color: #ffffff;
   border: 2px solid #dee3e4;
-  outline: 1px solid green;
 }
 
 .modal-container {
@@ -1701,17 +1691,13 @@ main .index-columns {
   position: relative;
 
   width: 300px;
-  /* temp */
-  min-height: 123px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding-top: 26px;
-  /* common style? */
+  padding-top: 21px;
+  padding-bottom: 22px;
   padding-left: 23px;
 
   color: #ffffff;
-
-  outline: 1px solid green;
 }
 
 .card-list .card-item:nth-child(3n) {
@@ -1734,25 +1720,37 @@ main .index-columns {
 
 .card-item h2 {
   margin: 0;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
+.card-item p {
+  margin: 0;
+}
+
 .card-item a {
-  padding-top: 12px;
-  padding-right: 24px;
-  padding-bottom: 14px;
-  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -8px;
+  margin-left: 1px;
+
 
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  width: 135px;
+  text-align: center;
+
 
   background-color: rgb(0, 0, 0, 0.1);
-  /* opacity: 0.1; */
 }
 
 .card-item .card-button:hover,
@@ -1768,18 +1766,15 @@ main .index-columns {
   position: relative;
 
   width: 620px;
-  /* temp */
-  min-height: 266px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-right: 20px;
   padding-bottom: 22px;
   padding-left: 25px;
 
   color: #ffffff;
 
-  outline: 1px solid blue;
 }
 
 .slider.slider-hidden {
@@ -1815,11 +1810,13 @@ main .index-columns {
   z-index: -1;
 
   width: 620px;
-  height: 266px;
+  height: 100%;
 }
 
 .slider .button-primary {
-  margin-top: 119px;
+  margin-top: 122px;
+  padding-left: 49px;
+  padding-right: 46px;
 }
 
 .slider .slider-button {
@@ -1836,7 +1833,7 @@ main .index-columns {
 
 .slider .slider-left {
   top: calc(50% - 20px);
-  left: 22px;
+  left: 25px;
 
   background-image: url("../img/icon-left.svg");
 }
