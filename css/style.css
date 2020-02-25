@@ -1663,6 +1663,10 @@ main .index-columns {
 
 /* CARDS */
 
+.cards {
+  margin-bottom: 33px;
+}
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -1917,4 +1921,35 @@ main .index-columns {
 .cards .layout-columns {
   display: flex;
   flex-direction: row;
+}
+
+/* POPULAR PRODUCTS */
+
+.popular-products .popular-products-header {
+  background-color: #f9f5f0;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-products .popular-products-title {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.popular-products-header a {
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 0;
 }
