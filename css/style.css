@@ -304,8 +304,6 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-
-
 .site-navigation,
 .user-navigation {
   margin: 0;
@@ -319,7 +317,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 281px;
   margin-top: 45px;
-  margin-left: 12px;
+  margin-left: 16px;
 
   list-style: none;
 }
@@ -1732,23 +1730,21 @@ main .index-columns {
 }
 
 .card-item a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  display: inline-block;
+  width: 135px;
   margin-top: -8px;
   margin-left: 1px;
-
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 
   font-size: 14px;
   line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  display: inline-block;
-  vertical-align: middle;
-  width: 135px;
-  text-align: center;
-
 
   background-color: rgb(0, 0, 0, 0.1);
 }
@@ -1774,7 +1770,6 @@ main .index-columns {
   padding-left: 25px;
 
   color: #ffffff;
-
 }
 
 .slider.slider-hidden {
@@ -1815,8 +1810,8 @@ main .index-columns {
 
 .slider .button-primary {
   margin-top: 122px;
-  padding-left: 49px;
   padding-right: 46px;
+  padding-left: 49px;
 }
 
 .slider .slider-button {
