@@ -2071,7 +2071,7 @@ main .index-columns {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url(../img/shadow.png);
+  background-image: url("../img/shadow.png");
   background-position: 0 0;
   background-repeat: repeat-y;
   width: 10px;
@@ -2113,21 +2113,47 @@ main .index-columns {
   position: relative;
 }
 
-.services-promo::before {
+.services-promo.active {
+  display: block;
+}
+
+.services-promo.promo-delivery::before {
   position: absolute;
   content: "";
   top: 0;
   right: 0;
   width: 468px;
   height: 261px;
-  background-image: url(../img/services-delivery.png);
+  background-image: url("../img/services-delivery.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-.services-promo.active {
-  display: block;
+.services-promo.promo-warranty::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/services-guarantee.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
+
+.services-promo.promo-credit::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/services-credit.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+
 
 .services-promo h3 {
   margin: 0;
