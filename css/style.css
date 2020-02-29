@@ -852,7 +852,7 @@ main .index-columns {
 .breadcrumbs li::after {
   content: "";
   position: absolute;
-  top: 2;
+  top: 2px;
   right: -24px;
 
   width: 8px;
@@ -863,17 +863,9 @@ main .index-columns {
   background-position: 0 0;
 }
 
-/* .breadcrumbs li + li:before {
-  content: "";
-
-  width: 8px;
-  height: 12px;
-  padding-left: 15px;
-
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-} */
+.breadcrumbs li:last-child::after {
+  display: none;
+}
 
 /* TODO: Change to select using class */
 
@@ -913,24 +905,22 @@ main .index-columns {
 /* user controls */
 
 .user-controls {
-  background-color: #f7f3ec;
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
+
+  background-color: #f7f3ec;
 }
 
 .user-controls.column-title {
-  margin-bottom: 20px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.user-controls.title-filter {
   margin: 0;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  padding-left: 19px;
 }
 
 .user-controls .title-sort {
@@ -938,45 +928,109 @@ main .index-columns {
   margin-right: 139px;
 }
 
-.user-controls.title-sort {
-  margin: 0;
-}
-
 .catalog .user-controls {
   display: flex;
 }
 
 .user-controls .sort-options {
-  margin: 0;
-  list-style: none;
   display: flex;
   justify-content: space-between;
   width: 354px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .sort-options .sort-option {
-  font: inherit;
-  text-transform: inherit;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  border-bottom: 1px dotted #ee3643;
   padding: 0;
+
+  font: inherit;
   color: rgba(0, 0, 0, 0.3);
+  text-transform: inherit;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dotted #ee3643;
   outline: none;
+  cursor: pointer;
 }
 
 .sort-options .sort-option:hover,
 .sort-options .sort-option:focus {
   color: #000000;
+
   border-bottom-style: solid;
 }
 
 .sort-options .sort-option:active,
 .sort-options .sort-option.active {
-  border-bottom: none;
   color: #ee3643;
+
+  border-bottom: none;
 }
+
+/* SORT ARROWS */
+
+.user-controls .sort-arrows {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  width: 43px;
+  margin: 0;
+  margin-left: 46px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort-arrows .sort-arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  width: 11px;
+  height: 10px;
+}
+
+.sort-arrows .sort-arrow::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.sort-arrows .arrow-inactive::before {
+  opacity: 0.3;
+}
+
+.sort-arrows .arrow-inactive:hover::before,
+.sort-arrows .arrow-inactive:focus::before {
+  opacity: 1;
+}
+
+.sort-arrows .sort-arrow.arrow-inactive.arrow-desc::before {
+  background-image: url("../img/icon-arrow-desc.svg");
+}
+
+.sort-arrows .sort-arrow.arrow-inactive.arrow-asc::before {
+  background-image: url("../img/icon-arrow-asc.svg");
+}
+
+.sort-arrows .sort-arrow.arrow-asc.arrow-active::before {
+  background-image: url("../img/icon-arrow-asc-active.svg");
+}
+
+.sort-arrows .sort-arrow.arrow-desc.arrow-active::before {
+  background-image: url("../img/icon-arrow-desc-active.svg");
+}
+
 
 .product-filters {
   width: 220px;
@@ -1992,34 +2046,35 @@ main .index-columns {
 /* POPULAR PRODUCTS */
 
 .popular-section .popular-header {
-  background-color: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   padding-top: 25px;
+  padding-right: 24px;
   padding-bottom: 26px;
   padding-left: 24px;
-  padding-right: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
+
+  background-color: #f9f5f0;
 }
 
 .popular-section .popular-title {
-  color: #32425c;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 400;
   margin: 0;
   margin-left: 5px;
 
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
 }
 
 .popular-header a {
-  padding-left: 55px;
-  padding-right: 55px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   margin-right: 0;
+  padding-top: 10px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  padding-left: 55px;
 }
 
 .popular-section .catalog-items {
@@ -2037,28 +2092,30 @@ main .index-columns {
 /* POPULAR BRANDS */
 
 .popular-brands .button-primary {
-  padding-left: 70px;
   padding-right: 70px;
+  padding-left: 70px;
 }
 
 .popular-section .popular-brands-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .popular-brands-list .popular-brand {
+  display: flex;
   width: 220px;
-  background-color: #ffffff;
-  border: 1px solid #eaeaea;
+  min-height: 145px;
   margin-right: 20px;
   margin-bottom: 20px;
-  min-height: 145px;
-  display: flex;
+
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
 }
 
 .popular-brands-list .popular-brand:nth-child(4n) {
@@ -2092,10 +2149,10 @@ main .index-columns {
 /* SERVICES */
 
 .services {
-  background-color: #f4f7f9;
-
   /* temp */
   min-height: 522px;
+
+  background-color: #f4f7f9;
 }
 
 .services .container {
@@ -2106,11 +2163,12 @@ main .index-columns {
 .services h2 {
   margin: 0;
   margin-bottom: 25px;
+
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
   color: #000000;
-  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .services-intro {
@@ -2120,24 +2178,25 @@ main .index-columns {
 
 .services .description {
   margin: 0;
-  font-family: 'PT Sans', Arial, sans-serif;
+
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
-  font-weight: 400;
 }
 
 .services .switcher {
+  position: relative;
+
+  width: 240px;
   margin: 0;
+  margin-right: 82px;
   padding: 0;
   /* padding-top: 44px; */
   padding-bottom: 46px;
+
   list-style: none;
-  width: 240px;
-  margin-right: 82px;
-
-  position: relative;
-
 }
 
 .services .switcher::before {
@@ -2145,31 +2204,36 @@ main .index-columns {
   position: absolute;
   top: -44px;
   right: 0;
-  background-image: url("../img/shadow.png");
-  background-position: 0 0;
-  background-repeat: repeat-y;
+
   width: 10px;
   height: 110%;
+
+  background-image: url("../img/shadow.png");
+  background-repeat: repeat-y;
+  background-position: 0 0;
 }
 
 .switcher a {
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-  background-color: #32425c;
-  color: #ffffff;
-  box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 22px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
 }
 
 .switcher-active a,
 .switcher a:active {
-  box-shadow: 0 1px 0 0 #ffffff, inset 0 1px 0 0 #ffffff;
-  background-color: #ffffff;
   color: #32425c;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff, inset 0 1px 0 0 #ffffff;
 }
 
 .services-columns {
@@ -2182,9 +2246,10 @@ main .index-columns {
 }
 
 .services-promo {
+  position: relative;
+
   display: none;
   width: 620px;
-  position: relative;
 }
 
 .services-promo.active {
@@ -2192,49 +2257,56 @@ main .index-columns {
 }
 
 .services-promo.promo-delivery::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 24px;
   right: 0;
+
   width: 468px;
   height: 261px;
+
   background-image: url("../img/services-delivery.png");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-promo.promo-warranty::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 2px;
   right: -7px;
+
   width: 389px;
   height: 283px;
+
   background-image: url("../img/services-guarantee.png");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-promo.promo-credit::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 0;
   right: -9px;
+
   width: 465px;
   height: 285px;
+
   background-image: url("../img/services-credit.png");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-promo h3 {
   margin: 0;
   margin-bottom: 24px;
+
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  text-transform: uppercase;
   color: #32425c;
-  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .promo-delivery p {
@@ -2247,6 +2319,6 @@ main .index-columns {
 
 .promo-credit .button-primary {
   margin-top: 26px;
-  padding-left: 45px;
   padding-right: 44px;
+  padding-left: 45px;
 }
