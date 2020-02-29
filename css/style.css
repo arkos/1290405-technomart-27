@@ -827,7 +827,7 @@ input[type="radio"].visually-hidden {
 main .index-columns {
   display: flex;
   justify-content: space-between;
-  padding: 82px 0 86px;
+  padding: 54px 0 86px;
 }
 
 .breadcrumbs {
@@ -2032,9 +2032,14 @@ main .index-columns {
   min-height: 522px;
 }
 
-
+.services .container {
+  margin-top: 65px;
+  padding-top: 66px;
+}
 
 .services h2 {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -2044,9 +2049,11 @@ main .index-columns {
 
 .services-intro {
   width: 398px;
+  margin-bottom: 23px;
 }
 
 .services .description {
+  margin: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -2057,10 +2064,11 @@ main .index-columns {
 .services .switcher {
   margin: 0;
   padding: 0;
-  padding-top: 46px;
+  /* padding-top: 44px; */
   padding-bottom: 46px;
   list-style: none;
   width: 240px;
+  margin-right: 82px;
 
   position: relative;
 
@@ -2069,13 +2077,13 @@ main .index-columns {
 .services .switcher::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -44px;
   right: 0;
   background-image: url("../img/shadow.png");
   background-position: 0 0;
   background-repeat: repeat-y;
   width: 10px;
-  height: 100%;
+  height: 110%;
 }
 
 .switcher a {
@@ -2086,8 +2094,8 @@ main .index-columns {
   color: #ffffff;
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 22px;
 }
 
@@ -2100,16 +2108,16 @@ main .index-columns {
 
 .services-columns {
   display: flex;
-  justify-content: space-between;
+  padding-top: 45px;
 }
 
 .services-column-right {
-  margin-top: 46px;
+  /* margin-top: 46px; */
 }
 
 .services-promo {
   display: none;
-  width: 610px;
+  width: 620px;
   position: relative;
 }
 
@@ -2120,7 +2128,7 @@ main .index-columns {
 .services-promo.promo-delivery::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: 24px;
   right: 0;
   width: 468px;
   height: 261px;
@@ -2132,8 +2140,8 @@ main .index-columns {
 .services-promo.promo-warranty::before {
   position: absolute;
   content: "";
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: -7px;
   width: 389px;
   height: 283px;
   background-image: url("../img/services-guarantee.png");
@@ -2145,7 +2153,7 @@ main .index-columns {
   position: absolute;
   content: "";
   top: 0;
-  right: 0;
+  right: -9px;
   width: 465px;
   height: 285px;
   background-image: url("../img/services-credit.png");
@@ -2153,10 +2161,9 @@ main .index-columns {
   background-repeat: no-repeat;
 }
 
-
-
 .services-promo h3 {
   margin: 0;
+  margin-bottom: 24px;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -2166,4 +2173,14 @@ main .index-columns {
 
 .promo-delivery p {
   width: 275px;
+}
+
+.promo-warranty p {
+  width: 379px;
+}
+
+.promo-credit .button-primary {
+  margin-top: 26px;
+  padding-left: 45px;
+  padding-right: 44px;
 }
