@@ -809,9 +809,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-
-
-
 /* -------------------------------- catalog.html */
 
 .main-catalog {
@@ -899,6 +896,7 @@ main .index-columns {
 
 .page-title {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   padding-top: 30px;
   padding-bottom: 34px;
@@ -910,6 +908,74 @@ main .index-columns {
   text-transform: uppercase;
 
   background-color: #f2f6f8;
+}
+
+/* user controls */
+
+.user-controls {
+  background-color: #f7f3ec;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.user-controls.column-title {
+  margin-bottom: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.user-controls.title-filter {
+  margin: 0;
+}
+
+.user-controls .title-sort {
+  margin: 0;
+  margin-right: 139px;
+}
+
+.user-controls.title-sort {
+  margin: 0;
+}
+
+.catalog .user-controls {
+  display: flex;
+}
+
+.user-controls .sort-options {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 354px;
+}
+
+.sort-options .sort-option {
+  font: inherit;
+  text-transform: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 1px dotted #ee3643;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.sort-options .sort-option:hover,
+.sort-options .sort-option:focus {
+  color: #000000;
+  border-bottom-style: solid;
+}
+
+.sort-options .sort-option:active,
+.sort-options .sort-option.active {
+  border-bottom: none;
+  color: #ee3643;
 }
 
 .product-filters {
