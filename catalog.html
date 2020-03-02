@@ -80,6 +80,23 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <p class="user-controls column-title title-filter">Фильтр:</p>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="price-range">
+              <legend>Цена:</legend>
+              <div class="user-controls range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="user-controls min-price" aria-label="Минимальное значение"><input type="number"
+                    name="min-price" value="0"></label>
+                <label class="user-controls max-price" aria-label="Максимальное значение"><input type="number"
+                    name="max-price" value="30000"></label>
+              </div>
+            </fieldset>
             <fieldset class="brands">
               <legend>Производители:</legend>
               <ul class="filter-brands">
@@ -273,8 +290,23 @@
               <p class="price">12500 Р.</p>
             </li>
           </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+          </ul>
         </section>
       </div>
+      <section class="about-product">
+        <div class="container">
+          <h2>Пара слов о перфораторах</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+            кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели
+            могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
+            «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
+      </section>
       <section class="modal modal-dialog modal-product-added">
         <h2>Товар добавлен в корзину!</h2>
         <div class="modal-footer">
