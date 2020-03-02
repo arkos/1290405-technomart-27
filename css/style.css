@@ -1435,7 +1435,7 @@ main .index-columns {
   height: 170px;
   padding-top: 44px;
 
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .catalog-item:hover .actions {
@@ -1518,7 +1518,7 @@ main .index-columns {
 }
 
 .actions .bookmark:active {
-  color: rgba(50, 66, 92);
+  color: rgb(50, 66, 92);
 
   opacity: 0.3;
 }
