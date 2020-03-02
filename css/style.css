@@ -809,9 +809,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+main .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 54px 0 86px;
+}
+
 /* -------------------------------- catalog.html */
 
-.main-catalog {
+.main-catalog .container {
   display: flex;
   flex-direction: column;
 }
@@ -819,12 +825,6 @@ input[type="radio"].visually-hidden {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
-}
-
-main .index-columns {
-  display: flex;
-  justify-content: space-between;
-  padding: 54px 0 86px;
 }
 
 .breadcrumbs {
@@ -867,8 +867,6 @@ main .index-columns {
   display: none;
 }
 
-/* TODO: Change to select using class */
-
 .breadcrumbs li.icon-home {
   content: "";
 
@@ -896,6 +894,7 @@ main .index-columns {
 
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
 
@@ -2519,8 +2518,15 @@ main .index-columns {
 }
 
 .about-product p {
+  margin: 0;
+  margin-top: 26px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.about-product .container {
+  padding-top: 64px;
+  padding-bottom: 69px;
 }
