@@ -1988,16 +1988,16 @@ main .index-columns {
   color: #ffffff;
   text-transform: uppercase;
 
-  background-color: rgb(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .card-item .card-button:hover,
 .card-item .card-button:focus {
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .card-item .card-button:active {
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .card-list .slider {
