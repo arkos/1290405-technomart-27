@@ -1844,8 +1844,11 @@ main .index-columns {
 }
 
 .modal-product-added {
-  position: relative;
-  margin-bottom: 20px;
+  top: 120px;
+  left: 50%;
+  margin-left: -310px;
+  background-color: #ffffff;
+  z-index: 30;
 }
 
 .modal-product-added .modal-footer {
