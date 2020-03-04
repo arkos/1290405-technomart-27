@@ -1686,8 +1686,7 @@ main .index-columns {
 /* modals */
 
 .modal {
-  position: relative;
-
+  position: fixed;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
@@ -1707,7 +1706,6 @@ main .index-columns {
 
 .modal-dialog {
   width: 620px;
-
   border-top: 7px solid #ee3643;
 }
 
@@ -1718,6 +1716,16 @@ main .index-columns {
 .contact-item input {
   background-color: #ffffff;
   border: 2px solid #dee3e4;
+}
+
+
+.modal-contact {
+  /* display: none; */
+  top: 120px;
+  left: 50%;
+  margin-left: -310px;
+  background-color: #ffffff;
+  z-index: 30;
 }
 
 .modal-container {
@@ -1735,9 +1743,6 @@ main .index-columns {
   padding-left: 82px;
 }
 
-.modal-contact {
-  /* display: none; */
-}
 
 .modal-contact input,
 .modal-contact textarea {
@@ -1771,6 +1776,36 @@ main .index-columns {
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #a9a9a9;
+}
+
+.modal-close {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 3px;
+  background-color: #ee3643;
+  top: 9px;
+  right: 0px;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 .modal-dialog .modal-footer {
