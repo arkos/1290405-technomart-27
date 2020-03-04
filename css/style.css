@@ -1690,20 +1690,6 @@ main .index-columns {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
-.modal::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  right: 9px;
-
-  width: 21px;
-  height: 21px;
-
-  background-image: url("../img/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .modal-dialog {
   width: 620px;
   border-top: 7px solid #ee3643;
@@ -1720,7 +1706,7 @@ main .index-columns {
 
 
 .modal-contact {
-  /* display: none; */
+  display: none;
   top: 120px;
   left: 50%;
   margin-left: -310px;
@@ -1897,6 +1883,11 @@ main .index-columns {
 
 .modal-map {
   display: none;
+  top: 120px;
+  left: 50%;
+  margin-left: -470px;
+  background-color: #ffffff;
+  z-index: 30;
 }
 
 .modal-map p {
