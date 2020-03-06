@@ -1889,7 +1889,7 @@ main .index-columns {
 
 .modal-map {
   display: none;
-  top: 120px;
+  top: 50px;
   left: 50%;
   margin-left: -470px;
   background-color: #ffffff;
@@ -1906,6 +1906,12 @@ main .index-columns {
 
 .modal-show {
   display: block;
+}
+
+.google-map {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
