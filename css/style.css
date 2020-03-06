@@ -1904,10 +1904,12 @@ main .index-columns {
   display: block;
 }
 
+.modal-show {
+  display: block;
+}
+
 
 /* Common styles */
-
-
 
 .modal-footer .button-primary {
   margin-right: 51px;
