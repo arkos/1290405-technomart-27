@@ -2265,7 +2265,7 @@ main .index-columns {
 .popular-brands-list .popular-brand {
   display: flex;
   width: 220px;
-  min-height: 145px;
+  
   margin-right: 20px;
   margin-bottom: 20px;
 
@@ -2277,49 +2277,67 @@ main .index-columns {
   margin-right: 0;
 }
 
-.popular-brands-list .popular-brand:hover,
-.popular-brands-list .popular-brand:focus {
-  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
-}
-
-.popular-brands-list .popular-brand:active {
-  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
-}
-
-.popular-brand img {
-  vertical-align: middle;
-}
-
-.popular-brand:active img {
-  opacity: 0.3;
-}
-
 .popular-brand .brand-logo {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 144px;
 }
 
-.brand-interskol {
+.popular-brand a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.brand-logo:hover,
+.brand-logo:focus {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brand-logo:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brand-logo img {
+  display: block;
+}
+
+.brand-logo:active img {
+  opacity: 0.3;
+}
+
+.brand-interskol img {
   margin-top: -14px;
 }
 
-.brand-makita {
+.brand-makita img {
   margin-top: -3px;
 }
 
-.brand-dewalt {
+.brand-dewalt img {
   margin-top: -4px;
 }
 
-.brand-hitachi {
-  margin-top: 3px;
+.brand-hitachi img {
   margin-left: 6px;
 }
 
-.brand-metabo {
-  margin-top: -6px;
+.brand-lg img {
+  margin-top: -5px;
+}
+.brand-aeg img {
+  margin-top: -5px;
+}
+
+.brand-metabo img {
+  margin-top: -10px;
   margin-left: 4px;
 }
 
