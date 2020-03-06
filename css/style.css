@@ -32,9 +32,7 @@ html {
   box-sizing: inherit;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -711,7 +709,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer-features-list a {
   display: block;
-  margin-top: 39px;
+  margin-top: 37px;
   margin-right: 59px;
 
   font-size: 18px;
@@ -748,7 +746,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer-product-list a {
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 59px;
 
   font-size: 18px;
@@ -767,7 +765,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer-bottom {
   padding-top: 35px;
-  padding-bottom: 28px;
+  padding-bottom: 31px;
 
   font-size: 16px;
   line-height: 18px;
@@ -790,6 +788,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 132px;
   margin: 0 auto;
+  margin-top: -2px;
   margin-right: 119px;
   padding: 0;
 
@@ -1371,11 +1370,10 @@ main .index-columns {
 
 .catalog-item {
   position: relative;
-  outline: 1px solid green;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
@@ -1452,6 +1450,7 @@ main .index-columns {
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 36px;
+  align-self: center;
 
   color: #ffffff;
 
@@ -1656,7 +1655,7 @@ main .index-columns {
 }
 
 .features .button-primary {
-  padding-top: 9px;
+  padding-top: 10px;
   padding-right: 40px;
   padding-left: 41px;
 }
@@ -1680,8 +1679,8 @@ main .index-columns {
 .contact-info .button-primary {
   margin-top: 33px;
   margin-right: 0;
-  padding-top: 11px;
-  padding-right: 59px;
+  padding-top: 10px;
+  padding-right: 58px;
   padding-left: 64px;
 }
 
@@ -2256,7 +2255,7 @@ main .index-columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   margin: 0;
   padding: 0;
 
@@ -2300,6 +2299,28 @@ main .index-columns {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.brand-interskol {
+  margin-top: -14px;
+}
+
+.brand-makita {
+  margin-top: -3px;
+}
+
+.brand-dewalt {
+  margin-top: -4px;
+}
+
+.brand-hitachi {
+  margin-top: 3px;
+  margin-left: 6px;
+}
+
+.brand-metabo {
+  margin-top: -6px;
+  margin-left: 4px;
 }
 
 /* SERVICES */
@@ -2415,7 +2436,7 @@ main .index-columns {
 .services-promo.promo-delivery::before {
   content: "";
   position: absolute;
-  top: 24px;
+  /* top: 24px; */
   right: 0;
 
   width: 468px;
@@ -2433,7 +2454,7 @@ main .index-columns {
   right: -7px;
 
   width: 389px;
-  height: 283px;
+  height: 258px;
 
   background-image: url("../img/services-guarantee.png");
   background-repeat: no-repeat;
