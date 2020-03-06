@@ -2327,8 +2327,8 @@ main .index-columns {
 
 .services {
   /* temp */
-  min-height: 522px;
-
+  /* min-height: 522px; */
+  padding-bottom: 53px;
   background-color: #f4f7f9;
 }
 
@@ -2436,7 +2436,7 @@ main .index-columns {
 .services-promo.promo-delivery::before {
   content: "";
   position: absolute;
-  /* top: 24px; */
+  top: 24px;
   right: 0;
 
   width: 468px;
@@ -2454,7 +2454,7 @@ main .index-columns {
   right: -7px;
 
   width: 389px;
-  height: 258px;
+  height: 283px;
 
   background-image: url("../img/services-guarantee.png");
   background-repeat: no-repeat;
