@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
       rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
 
   <body>
@@ -66,11 +66,11 @@
         <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
         <section class="cards">
           <div class="layout-columns">
-            <input class="visually-hidden" type="radio" id="promo-1" name="promo-toggle" checked>
-            <input class="visually-hidden" type="radio" id="promo-2" name="promo-toggle">
-            <input class="visually-hidden" type="radio" id="promo-3" name="promo-toggle">
-            <input class="visually-hidden" type="radio" id="promo-4" name="promo-toggle">
-                     
+            <input class="visually-hidden promo-1" type="radio" id="promo-1" name="promo-toggle" checked>
+            <input class="visually-hidden promo-2" type="radio" id="promo-2" name="promo-toggle">
+            <input class="visually-hidden promo-3" type="radio" id="promo-3" name="promo-toggle">
+            <input class="visually-hidden promo-4" type="radio" id="promo-4" name="promo-toggle">
+
             <ul class="card-list">
               <li class="card-item card-1 flag flag-new">
                 <h2>Материалы</h2>
@@ -84,7 +84,7 @@
                   <a class="card-button" href="">На все случаи</a>
                 </p>
               </li>
-              <li class="slider" id="slide-1">
+              <li class="slider slide-1" id="slide-1">
                 <h2>Дрели</h2>
                 <p class="description">Соседям на радость!</p>
                 <p>
@@ -94,7 +94,7 @@
                 <label class="slider-button slider-left" for="promo-1" aria-label="Назад"></label>
                 <label class="slider-button slider-right" for="promo-2" aria-label="Вперед"></label>
               </li>
-              <li class="slider" id="slide-2">
+              <li class="slider slide-2" id="slide-2">
                 <h2>Перфораторы</h2>
                 <p class="description">Настоящие мужские игрушки</p>
                 <p>
@@ -237,9 +237,9 @@
       </div>
       <section class="services">
         <div class="container">
-          <input class="visually-hidden" type="radio" id="service-1" name="service-toggle" checked>
-          <input class="visually-hidden" type="radio" id="service-2" name="service-toggle">
-          <input class="visually-hidden" type="radio" id="service-3" name="service-toggle">
+          <input class="visually-hidden service-1" type="radio" id="service-1" name="service-toggle" checked>
+          <input class="visually-hidden service-2" type="radio" id="service-2" name="service-toggle">
+          <input class="visually-hidden service-3" type="radio" id="service-3" name="service-toggle">
 
           <div class="services-intro">
             <h2>Сервисы</h2>
@@ -327,7 +327,7 @@
             <img src="img/address-map-big.jpg" width="940" height="446"
               alt="Офис интернет-магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" />
           </p>
-          <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sil!4v1583573850212!5m2!1sen!2sil" width="940" height="446" style="border:0;" allowfullscreen=""></iframe>
+          <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sil!4v1583573850212!5m2!1sen!2sil" width="940" height="446" style="border: 0;" allowfullscreen=""></iframe>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </section>
       </div>

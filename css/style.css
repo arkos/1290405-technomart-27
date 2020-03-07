@@ -5,7 +5,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
-  color: #000;
+  color: #000000;
   background-color: white;
 }
 
@@ -55,7 +55,7 @@ html {
   padding: 10px 30px;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
@@ -65,7 +65,7 @@ html {
 
 .button-primary {
   margin-right: 20px;
-  color: #fff;
+  color: #ffffff;
   background-color: #ee3643;
 }
 
@@ -83,9 +83,9 @@ html {
   font-size: 21px;
   line-height: 21px;
   vertical-align: middle;
-  color: #000;
+  color: #000000;
   text-transform: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .button-secondary:hover,
@@ -112,7 +112,7 @@ html {
   width: 940px;
   font-size: 17px;
   line-height: 17px;
-  color: #fff;
+  color: #ffffff;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
 }
@@ -125,7 +125,7 @@ html {
   height: 42px;
   font-size: 17px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   background-color: #293449;
 }
 
@@ -136,7 +136,7 @@ html {
 
 .top-panel a {
   display: block;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* TOP PANEL - BOOKMARKS */
@@ -241,7 +241,7 @@ html {
 
 .order-link:hover,
 .order-link:focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #5fbb2d;
 }
 
@@ -262,24 +262,16 @@ html {
   padding-right: 10px;
   padding-bottom: 12px;
   padding-left: 49px;
-  color: #fff;
+  color: #ffffff;
   background-color: #293449;
   border: none;
   outline: none;
 }
 
-/* .search-term input {
-  width: 100%;
-  height: 100%;
-
-  background-color: transparent;
-  border: none;
-} */
-
 .search-input::placeholder {
   font-size: 17px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .search-input:hover {
@@ -287,14 +279,10 @@ html {
 }
 
 .search-input:focus {
-  color: #000;
-  border-bottom: 1px solid #fff;
-  background-color: #fff;
-}
-
-/* .search-term input:focus {
+  color: #000000;
+  border-bottom: 1px solid #ffffff;
   background-color: #ffffff;
-} */
+}
 
 .search-input + .icon-search {
   position: absolute;
@@ -306,12 +294,12 @@ html {
 
 .search-input + .icon-search path {
   opacity: 0.3;
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .search-input:focus + .icon-search path {
   opacity: 1;
-  fill: #f00;
+  fill: #ff0000;
 }
 
 .search-input:hover + .icon-search path {
@@ -350,7 +338,7 @@ html {
   padding-left: 48px;
   vertical-align: middle;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .user-navigation .login-link::before {
@@ -384,7 +372,7 @@ html {
   padding-left: 25px;
   vertical-align: middle;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -409,7 +397,6 @@ html {
   width: 220px;
   height: 47px;
 
-  /* margin-right: auto; */
   padding-top: 13px;
 }
 
@@ -454,7 +441,7 @@ html {
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
-  border: 3px solid #fff;
+  border: 3px solid #ffffff;
 }
 
 .contact-details .phone::before {
@@ -488,7 +475,7 @@ html {
   padding-right: 10px;
   padding-bottom: 11px;
   padding-left: 47px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-transform: none;
 }
 
@@ -498,16 +485,16 @@ html {
   margin-right: 35px;
   font-size: 21px;
   line-height: 21px;
-  color: #000;
+  color: #000000;
 }
 
 .button-logged-in:hover .user-name,
 .button-logged-in:focus .user-name {
-  color: #000;
+  color: #000000;
 }
 
 .button-logged-in:active .user-name {
-  color: #000;
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -592,7 +579,7 @@ html {
   padding-right: 29px;
   padding-bottom: 23px;
   padding-left: 32px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .site-navigation a:hover,
@@ -688,11 +675,11 @@ html {
 }
 
 .main-footer-bottom {
-  padding-top: 35px;
+  padding-top: 38px;
   padding-bottom: 31px;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   background-color: #293449;
 }
 
@@ -717,7 +704,6 @@ html {
 }
 
 .social-button {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -755,7 +741,7 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-contact-dev a {
@@ -815,7 +801,7 @@ main .index-columns {
   list-style: none;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -852,7 +838,7 @@ main .index-columns {
 }
 
 .breadcrumbs a {
-  color: #000;
+  color: #000000;
 }
 
 .page-title {
@@ -875,8 +861,8 @@ main .index-columns {
 .user-controls {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
   text-transform: uppercase;
   background-color: #f7f3ec;
 }
@@ -926,7 +912,7 @@ main .index-columns {
 
 .sort-options .sort-option:hover,
 .sort-options .sort-option:focus {
-  color: #000;
+  color: #000000;
   border-bottom-style: solid;
 }
 
@@ -1024,7 +1010,7 @@ main .index-columns {
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1062,7 +1048,7 @@ main .index-columns {
   width: 20px;
   height: 20px;
   padding: 0;
-  border: 8px solid #fff;
+  border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
@@ -1094,7 +1080,7 @@ main .index-columns {
   height: 30px;
   font-size: 16px;
   line-height: 18px;
-  color: #444;
+  color: #444444;
 }
 
 .price-controls label {
@@ -1141,7 +1127,7 @@ main .index-columns {
 .filter-power label {
   font-size: 15px;
   line-height: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1238,10 +1224,10 @@ main .index-columns {
   font: inherit;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
   cursor: pointer;
 }
@@ -1266,9 +1252,9 @@ main .index-columns {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
-  color: #000;
+  color: #000000;
   border: 1px solid #e5e5e5;
 }
 
@@ -1295,7 +1281,7 @@ main .index-columns {
   padding: 0 30px;
   font-size: 18px;
   line-height: 20px;
-  color: #000;
+  color: #000000;
 }
 
 .catalog-item .image {
@@ -1322,8 +1308,6 @@ main .index-columns {
 .catalog-item .price {
   position: relative;
 
-  /* width: 141px; */
-
   margin: 0 auto;
   margin-bottom: 20px;
   padding-top: 10px;
@@ -1331,7 +1315,7 @@ main .index-columns {
   padding-bottom: 10px;
   padding-left: 36px;
   align-self: center;
-  color: #fff;
+  color: #ffffff;
   background-color: #ee3643;
   border-radius: 3px;
 }
@@ -1353,7 +1337,7 @@ main .index-columns {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  color: #999;
+  color: #999999;
   text-decoration: line-through;
 }
 
@@ -1388,9 +1372,9 @@ main .index-columns {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   background-color: #63a63e;
   cursor: pointer;
@@ -1451,13 +1435,13 @@ main .index-columns {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
-  color: #000;
+  color: #000000;
 }
 
 .index-columns p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .features {
@@ -1468,7 +1452,7 @@ main .index-columns {
 
 .features h2 {
   text-transform: uppercase;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .features p {
@@ -1496,7 +1480,7 @@ main .index-columns {
   margin-left: 36px;
   font-size: 18px;
   line-height: 20px;
-  color: #000;
+  color: #000000;
 }
 
 .features-list .feature-item::before {
@@ -1528,7 +1512,7 @@ main .index-columns {
 
 .contact-info h2 {
   text-transform: uppercase;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .contact-info p {
@@ -1562,7 +1546,7 @@ main .index-columns {
   top: 120px;
   left: 50%;
   margin-left: -310px;
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 30;
 }
 
@@ -1585,8 +1569,8 @@ main .index-columns {
 .modal-contact textarea {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
   border: 2px solid #dee3e4;
   outline: none;
 }
@@ -1661,7 +1645,7 @@ main .index-columns {
   padding-top: 9px;
   padding-bottom: 8px;
   padding-left: 11px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #dee3e4;
   width: 220px;
 }
@@ -1698,7 +1682,7 @@ main .index-columns {
   top: 120px;
   left: 50%;
   margin-left: -310px;
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 30;
   display: none;
 }
@@ -1736,7 +1720,7 @@ main .index-columns {
   top: 50px;
   left: 50%;
   margin-left: -470px;
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 30;
 }
 
@@ -1823,7 +1807,7 @@ main .index-columns {
   padding-top: 21px;
   padding-bottom: 22px;
   padding-left: 23px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .card-list .card-item:nth-child(3n) {
@@ -1867,7 +1851,7 @@ main .index-columns {
   line-height: 18px;
   vertical-align: middle;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -1891,7 +1875,7 @@ main .index-columns {
   padding-bottom: 22px;
   padding-left: 25px;
   background-color: #685c53;
-  color: #fff;
+  color: #ffffff;
 }
 
 .slider {
@@ -1902,10 +1886,10 @@ main .index-columns {
   margin: 0;
 }
 
-#promo-1:checked ~ .card-list #slide-1,
-#promo-2:checked ~ .card-list #slide-2,
-#promo-3:checked ~ .card-list #slide-1,
-#promo-4:checked ~ .card-list #slide-2 {
+.promo-1:checked ~ .card-list .slide-1,
+.promo-2:checked ~ .card-list .slide-2,
+.promo-3:checked ~ .card-list .slide-1,
+.promo-4:checked ~ .card-list .slide-2 {
   display: block;
 }
 
@@ -2100,7 +2084,7 @@ main .index-columns {
   width: 220px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #eaeaea;
 }
 
@@ -2176,9 +2160,6 @@ main .index-columns {
 /* SERVICES */
 
 .services {
-  /* temp */
-
-  /* min-height: 522px; */
   padding-bottom: 53px;
   background-color: #f4f7f9;
 }
@@ -2194,7 +2175,7 @@ main .index-columns {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -2208,8 +2189,8 @@ main .index-columns {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
 }
 
 .services .switcher {
@@ -2242,24 +2223,24 @@ main .index-columns {
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
   background-color: #32425c;
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   cursor: pointer;
 }
 
-#service-1:checked ~ .services-columns .promo-delivery,
-#service-2:checked ~ .services-columns .promo-warranty,
-#service-3:checked ~ .services-columns .promo-credit {
+.service-1:checked ~ .services-columns .promo-delivery,
+.service-2:checked ~ .services-columns .promo-warranty,
+.service-3:checked ~ .services-columns .promo-credit {
   display: block;
 }
 
-#service-1:checked ~ .services-columns label[for="service-1"],
-#service-2:checked ~ .services-columns label[for="service-2"],
-#service-3:checked ~ .services-columns label[for="service-3"] {
+.service-1:checked ~ .services-columns label[for="service-1"],
+.service-2:checked ~ .services-columns label[for="service-2"],
+.service-3:checked ~ .services-columns label[for="service-3"] {
   color: #32425c;
-  background-color: #fff;
-  box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #fff;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff, inset 0 1px 0 0 #ffffff;
 }
 
 .services-columns {
@@ -2355,10 +2336,10 @@ main .index-columns {
 .pagination-item a {
   display: block;
   padding: 10px 15px;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -2376,20 +2357,20 @@ main .index-columns {
 .pagination-item-current a {
   border: 1px solid #ee3643;
   background-color: #ee3643;
-  color: #fff;
+  color: #ffffff;
 }
 
 .pagination-item-current a:hover,
 .pagination-item-current a:focus {
   border: 1px solid #ee3643;
   background-color: #ee3643;
-  color: #fff;
+  color: #ffffff;
 }
 
 .pagination-item-next a {
   text-transform: uppercase;
   padding-left: 32px;
-  padding-right: 42px;
+  padding-right: 30px;
 }
 
 /* about-product */
@@ -2400,7 +2381,7 @@ main .index-columns {
 }
 
 .about-product h2 {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -2411,7 +2392,7 @@ main .index-columns {
 .about-product p {
   margin: 0;
   margin-top: 26px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
