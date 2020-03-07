@@ -2059,16 +2059,19 @@ main .index-columns {
   color: #ffffff;
 }
 
-.slider.slider-hidden {
+.slider {
   display: none;
-}
-
-.card-list .slider:last-child {
-  margin: 0;
 }
 
 .slider p {
   margin: 0;
+}
+
+#promo-1:checked ~ .card-list #slide-1,
+#promo-2:checked ~ .card-list #slide-2,
+#promo-3:checked ~ .card-list #slide-1,
+#promo-4:checked ~ .card-list #slide-2 {
+  display: block;
 }
 
 .slider h2 {
@@ -2111,6 +2114,7 @@ main .index-columns {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  color: transparent;
 }
 
 .slider .slider-left {
