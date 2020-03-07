@@ -11,8 +11,6 @@ body {
   background-color: white;
 }
 
-/* TODO: All navigations should have flex wrap   */
-
 img {
   max-width: 100%;
   height: auto;
@@ -466,7 +464,7 @@ html {
 .logo-normal {
   width: 220px;
   height: 68px;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 25px;
 }
 
@@ -647,7 +645,6 @@ html {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   margin: 0;
   padding: 0 10px;
 
@@ -699,6 +696,8 @@ html {
 
 .main-footer-features-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 547px;
   margin: 0;
   padding: 0;
@@ -710,7 +709,6 @@ html {
 .main-footer-features-list a {
   display: block;
   margin-top: 37px;
-  margin-right: 59px;
 
   font-size: 18px;
   line-height: 24px;
@@ -733,6 +731,8 @@ html {
 
 .main-footer-product-list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 524px;
   margin: 0;
   padding: 0;
@@ -747,7 +747,6 @@ html {
 .main-footer-product-list a {
   display: block;
   margin-top: 8px;
-  margin-right: 59px;
 
   font-size: 18px;
   line-height: 24px;
@@ -827,7 +826,7 @@ html {
 .footer-categories p {
   width: 325px;
   margin: 0;
-  margin-top: 9px;
+  margin-top: 7px;
   margin-left: 3px;
 }
 
@@ -1373,7 +1372,6 @@ main .index-columns {
 
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
@@ -1856,7 +1854,6 @@ main .index-columns {
 
 .modal-product-added .modal-footer {
   display: flex;
-  /* justify-content: center; */
   height: auto;
   padding: 37px 80px;
 }
@@ -2267,7 +2264,6 @@ main .index-columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
   margin: 0;
   padding: 0;
 
