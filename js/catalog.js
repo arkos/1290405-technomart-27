@@ -11,7 +11,7 @@ for (var i = 0; i < buyButtons.length; i++) {
 buyClose.addEventListener('click', function(evt) {
     evt.preventDefault();
     buyPopup.classList.remove('modal-show');
-})
+});
 
 window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {
@@ -20,7 +20,7 @@ window.addEventListener('keydown', function(evt) {
             buyPopup.classList.remove('modal-show');
         }
     }
-})
+});
 
 function onBuyButton(evt) {
     evt.preventDefault();
