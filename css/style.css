@@ -1695,16 +1695,6 @@ main .index-columns {
   border-top: 7px solid #ee3643;
 }
 
-.contact-item input {
-  width: 220px;
-}
-
-.contact-item input {
-  background-color: #ffffff;
-  border: 2px solid #dee3e4;
-}
-
-
 .modal-contact {
   display: none;
   top: 120px;
@@ -1729,12 +1719,8 @@ main .index-columns {
   padding-left: 82px;
 }
 
-
 .modal-contact input,
 .modal-contact textarea {
-  padding-top: 8px;
-  padding-bottom: 8px;
-
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1756,11 +1742,13 @@ main .index-columns {
   border-color: #ee3643;
 }
 
+.modal-contact input:-ms-input-placeholder,
+.modal-contact textarea:-ms-input-placeholder {
+  color: #a9a9a9;
+}
+
 .modal-contact input::placeholder,
 .modal-contact textarea::placeholder {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
   color: #a9a9a9;
 }
 
@@ -1812,6 +1800,9 @@ main .index-columns {
   padding-top: 9px;
   padding-bottom: 8px;
   padding-left: 11px;
+  background-color: #ffffff;
+  border: 2px solid #dee3e4;
+  width: 220px;
 }
 
 .contact-item textarea {
@@ -1820,7 +1811,6 @@ main .index-columns {
   padding-bottom: 15px;
   padding-left: 12px;
 }
-
 
 .modal-footer {
   width: 100%;
@@ -2052,6 +2042,7 @@ main .index-columns {
   padding-right: 20px;
   padding-bottom: 22px;
   padding-left: 25px;
+  background-color: #685c53;
 
   color: #ffffff;
 }
@@ -2078,18 +2069,22 @@ main .index-columns {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 100;
 }
 
 .slider .description {
   font-size: 18px;
   line-height: 24px;
+  z-index: 100;
+  position: relative;
 }
 
 .slider img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 
   width: 620px;
   height: 100%;
@@ -2099,6 +2094,8 @@ main .index-columns {
   margin-top: 122px;
   padding-right: 46px;
   padding-left: 49px;
+  position: relative;
+  z-index: 100;
 }
 
 .slider .slider-button {
