@@ -1911,13 +1911,13 @@ main .index-columns {
   line-height: 36px;
   text-transform: uppercase;
   position: relative;
-  z-index: 100;
+  z-index: 20;
 }
 
 .slider .description {
   font-size: 18px;
   line-height: 24px;
-  z-index: 100;
+  z-index: 20;
   position: relative;
 }
 
@@ -1935,7 +1935,7 @@ main .index-columns {
   padding-right: 46px;
   padding-left: 49px;
   position: relative;
-  z-index: 100;
+  z-index: 20;
 }
 
 .slider .slider-button {
