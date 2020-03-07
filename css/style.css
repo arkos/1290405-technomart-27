@@ -2400,7 +2400,6 @@ main .index-columns {
   margin: 0;
   margin-right: 82px;
   padding: 0;
-  /* padding-top: 44px; */
   padding-bottom: 46px;
 
   list-style: none;
@@ -2420,7 +2419,7 @@ main .index-columns {
   background-position: 0 0;
 }
 
-.switcher a {
+.switcher-item {
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -2433,15 +2432,24 @@ main .index-columns {
 
   background-color: #32425c;
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
+  cursor: pointer;
 }
 
-.switcher-active a,
-.switcher a:active {
+#service-1:checked ~ .services-columns .promo-delivery,
+#service-2:checked ~ .services-columns .promo-warranty,
+#service-3:checked ~ .services-columns .promo-credit {
+  display: block;
+}
+
+#service-1:checked ~ .services-columns label[for="service-1"],
+#service-2:checked ~ .services-columns label[for="service-2"],
+#service-3:checked ~ .services-columns label[for="service-3"] {
   color: #32425c;
 
   background-color: #ffffff;
   box-shadow: 0 1px 0 0 #ffffff, inset 0 1px 0 0 #ffffff;
 }
+
 
 .services-columns {
   display: flex;
@@ -2453,10 +2461,6 @@ main .index-columns {
 
   display: none;
   width: 620px;
-}
-
-.services-promo.active {
-  display: block;
 }
 
 .services-promo.promo-delivery::before {
