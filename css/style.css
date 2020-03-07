@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
-  color: #000000;
-
+  color: #000;
   background-color: white;
 }
 
@@ -32,17 +30,13 @@ html {
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
@@ -59,23 +53,19 @@ html {
 .button {
   display: inline-block;
   padding: 10px 30px;
-
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
-
   border: none;
   cursor: pointer;
 }
 
 .button-primary {
   margin-right: 20px;
-
-  color: #ffffff;
-
+  color: #fff;
   background-color: #ee3643;
 }
 
@@ -90,14 +80,12 @@ html {
 
 .button-secondary {
   display: inline-block;
-
   font-size: 21px;
   line-height: 21px;
   vertical-align: middle;
-  color: #000000;
+  color: #000;
   text-transform: none;
-
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .button-secondary:hover,
@@ -116,18 +104,15 @@ html {
   flex-direction: column;
   width: 100%;
   padding-bottom: 60px;
-
   background-color: #f4f7f9;
 }
 
 .main-navigation {
   order: 1;
   width: 940px;
-
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;
-
+  color: #fff;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
 }
@@ -138,11 +123,9 @@ html {
   order: -2;
   width: 100%;
   height: 42px;
-
   font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
-
+  color: #fff;
   background-color: #293449;
 }
 
@@ -153,8 +136,7 @@ html {
 
 .top-panel a {
   display: block;
-
-  color: #ffffff;
+  color: #fff;
 }
 
 /* TOP PANEL - BOOKMARKS */
@@ -176,10 +158,8 @@ html {
   position: absolute;
   top: 12px;
   left: 17px;
-
   width: 14px;
   height: 16px;
-
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -198,7 +178,6 @@ html {
 
 .top-panel .bookmarks-link:active {
   color: rgba(255, 255, 255, 0.6);
-
   background-color: #161d29;
 }
 
@@ -220,10 +199,8 @@ html {
   position: absolute;
   top: 12px;
   left: 18px;
-
   width: 15px;
   height: 15px;
-
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -232,7 +209,6 @@ html {
 
 .top-panel .cart-full {
   padding-right: 26px;
-
   background-color: #ee3643;
 }
 
@@ -248,7 +224,6 @@ html {
 
 .top-panel .cart-empty:active {
   color: rgba(255, 255, 255, 0.6);
-
   background-color: #161d29;
 }
 
@@ -256,34 +231,27 @@ html {
   opacity: 0.5;
 }
 
-
-
-
 .top-panel .order-link {
   padding-top: 12px;
   padding-right: 22px;
   padding-bottom: 12px;
   padding-left: 20px;
-
   background-color: #63a63e;
 }
 
 .order-link:hover,
 .order-link:focus {
-  color: #ffffff;
-
+  color: #fff;
   background-color: #5fbb2d;
 }
 
 .order-link:active {
   color: rgba(255, 255, 255, 0.5);
-
   background-color: #5fbb2d;
 }
 
 .top-panel .search-term {
   position: relative;
-
   width: 270px;
   margin: 0;
 }
@@ -294,9 +262,7 @@ html {
   padding-right: 10px;
   padding-bottom: 12px;
   padding-left: 49px;
-
-  color: #ffffff;
-
+  color: #fff;
   background-color: #293449;
   border: none;
   outline: none;
@@ -313,7 +279,7 @@ html {
 .search-input::placeholder {
   font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .search-input:hover {
@@ -321,9 +287,9 @@ html {
 }
 
 .search-input:focus {
-  color: #000000;
-  border-bottom: 1px solid #ffffff;
-  background-color: #ffffff;
+  color: #000;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
 }
 
 /* .search-term input:focus {
@@ -334,21 +300,18 @@ html {
   position: absolute;
   top: 12px;
   left: 17px;
-
   width: 17px;
   height: 17px;
 }
 
 .search-input + .icon-search path {
   opacity: 0.3;
-
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .search-input:focus + .icon-search path {
   opacity: 1;
-
-  fill: #ff0000;
+  fill: #f00;
 }
 
 .search-input:hover + .icon-search path {
@@ -359,7 +322,6 @@ html {
 .user-navigation {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -369,7 +331,6 @@ html {
   width: 281px;
   margin-top: 45px;
   margin-left: 16px;
-
   list-style: none;
 }
 
@@ -381,18 +342,15 @@ html {
 
 .user-navigation .login-link {
   position: relative;
-
   display: inline-block;
   width: 121px;
   height: 45px;
   padding-top: 13px;
   padding-bottom: 11px;
   padding-left: 48px;
-
   vertical-align: middle;
   text-align: center;
-
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .user-navigation .login-link::before {
@@ -400,10 +358,8 @@ html {
   position: absolute;
   top: 14px;
   left: 14px;
-
   width: 20px;
   height: 17px;
-
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -419,7 +375,6 @@ html {
   opacity: 0.3;
 }
 
-
 .user-navigation .signup-link {
   display: inline-block;
   width: 150px;
@@ -427,19 +382,15 @@ html {
   padding-top: 13px;
   padding-bottom: 11px;
   padding-left: 25px;
-
   vertical-align: middle;
   text-align: center;
-
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .logo {
   display: inline-block;
-
   vertical-align: middle;
   text-align: center;
-
   background-color: #ee3643;
   box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
@@ -457,6 +408,7 @@ html {
 .logo-small {
   width: 220px;
   height: 47px;
+
   /* margin-right: auto; */
   padding-top: 13px;
 }
@@ -481,7 +433,6 @@ html {
   margin-bottom: 50px;
   margin-left: 53px;
   padding: 0;
-
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -494,19 +445,16 @@ html {
 
 .contact-details .phone {
   position: relative;
-
   display: block;
   margin-right: 51px;
   padding-top: 13px;
   padding-right: 49px;
   padding-bottom: 10px;
   padding-left: 74px;
-
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
-
-  border: 3px solid #ffffff;
+  border: 3px solid #fff;
 }
 
 .contact-details .phone::before {
@@ -514,10 +462,8 @@ html {
   position: absolute;
   top: 13px;
   left: 15px;
-
   width: 19px;
   height: 19px;
-
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -526,7 +472,6 @@ html {
 .contact-details .address {
   margin-top: 2px;
   margin-left: 12px;
-
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -538,15 +483,12 @@ html {
 
 .button-logged-in {
   position: relative;
-
   display: flex;
   padding-top: 14px;
   padding-right: 10px;
   padding-bottom: 11px;
   padding-left: 47px;
-
-  background-color: #ffffff;
-
+  background-color: #fff;
   text-transform: none;
 }
 
@@ -554,19 +496,18 @@ html {
   display: block;
   margin-top: -2px;
   margin-right: 35px;
-
   font-size: 21px;
   line-height: 21px;
-  color: #000000;
+  color: #000;
 }
 
 .button-logged-in:hover .user-name,
 .button-logged-in:focus .user-name {
-  color: #000000;
+  color: #000;
 }
 
 .button-logged-in:active .user-name {
-  color: #000000;
+  color: #000;
   opacity: 0.3;
 }
 
@@ -575,10 +516,8 @@ html {
   position: absolute;
   top: 13px;
   left: 13px;
-
   width: 20px;
   height: 18px;
-
   background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -590,12 +529,10 @@ html {
   opacity: 1;
 }
 
-
 .button-logged-in .logout {
   display: block;
   width: 20px;
   height: 17px;
-
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -638,7 +575,6 @@ html {
 .personal-list li:first-child {
   margin-right: 32px;
   margin-left: 14px;
-
   list-style: none;
 }
 
@@ -647,7 +583,6 @@ html {
   flex-wrap: wrap;
   margin: 0;
   padding: 0 10px;
-
   list-style: none;
 }
 
@@ -657,8 +592,7 @@ html {
   padding-right: 29px;
   padding-bottom: 23px;
   padding-left: 32px;
-
-  color: #ffffff;
+  color: #fff;
 }
 
 .site-navigation a:hover,
@@ -668,7 +602,6 @@ html {
 
 .site-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
-
   background-color: #1d2739;
 }
 
@@ -682,11 +615,8 @@ html {
 
 .main-footer-top {
   padding-bottom: 50px;
-
   background-color: #32425c;
 }
-
-
 
 .main-footer-top p {
   font-size: 18px;
@@ -701,15 +631,12 @@ html {
   width: 547px;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
-
 
 .main-footer-features-list a {
   display: block;
   margin-top: 37px;
-
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -736,7 +663,6 @@ html {
   width: 524px;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -747,7 +673,6 @@ html {
 .main-footer-product-list a {
   display: block;
   margin-top: 8px;
-
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
@@ -765,11 +690,9 @@ html {
 .main-footer-bottom {
   padding-top: 35px;
   padding-bottom: 31px;
-
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
-
+  color: #fff;
   background-color: #293449;
 }
 
@@ -790,7 +713,6 @@ html {
   margin-top: -2px;
   margin-right: 119px;
   padding: 0;
-
   list-style: none;
 }
 
@@ -801,7 +723,6 @@ html {
   align-items: center;
   width: 42px;
   height: 42px;
-
   background-color: #212a3a;
   border-radius: 50%;
 }
@@ -834,9 +755,8 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
+  color: #fff;
 }
-
 
 .footer-contact-dev a {
   color: #ffd180;
@@ -892,7 +812,6 @@ main .index-columns {
   margin-top: 21px;
   margin-bottom: 20px;
   padding: 0;
-
   list-style: none;
   font-size: 13px;
   line-height: 18px;
@@ -902,7 +821,6 @@ main .index-columns {
 
 .breadcrumbs li {
   position: relative;
-
   margin-right: 41px;
 }
 
@@ -911,10 +829,8 @@ main .index-columns {
   position: absolute;
   top: 2px;
   right: -24px;
-
   width: 8px;
   height: 12px;
-
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -926,11 +842,9 @@ main .index-columns {
 
 .breadcrumbs li.icon-home {
   content: "";
-
   display: block;
   width: 14px;
   height: 12px;
-
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -938,7 +852,7 @@ main .index-columns {
 }
 
 .breadcrumbs a {
-  color: #000000;
+  color: #000;
 }
 
 .page-title {
@@ -948,13 +862,11 @@ main .index-columns {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 28px;
-
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
-
   background-color: #f2f6f8;
 }
 
@@ -964,9 +876,8 @@ main .index-columns {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
-
   background-color: #f7f3ec;
 }
 
@@ -998,17 +909,14 @@ main .index-columns {
   width: 354px;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .sort-options .sort-option {
   padding: 0;
-
   font: inherit;
   color: rgba(0, 0, 0, 0.3);
   text-transform: inherit;
-
   background-color: transparent;
   border: none;
   border-bottom: 1px dotted #ee3643;
@@ -1018,15 +926,13 @@ main .index-columns {
 
 .sort-options .sort-option:hover,
 .sort-options .sort-option:focus {
-  color: #000000;
-
+  color: #000;
   border-bottom-style: solid;
 }
 
 .sort-options .sort-option:active,
 .sort-options .sort-option.active {
   color: #ee3643;
-
   border-bottom: none;
 }
 
@@ -1034,14 +940,12 @@ main .index-columns {
 
 .user-controls .sort-arrows {
   position: relative;
-
   display: flex;
   justify-content: space-between;
   width: 43px;
   margin: 0;
   margin-left: 46px;
   padding: 0;
-
   list-style: none;
 }
 
@@ -1091,7 +995,6 @@ main .index-columns {
   background-image: url("../img/icon-arrow-desc-active.svg");
 }
 
-
 .product-filters {
   width: 220px;
 }
@@ -1118,7 +1021,6 @@ main .index-columns {
 
 .product-filters legend {
   margin-bottom: 14px;
-
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -1160,7 +1062,7 @@ main .index-columns {
   width: 20px;
   height: 20px;
   padding: 0;
-  border: 8px solid #ffffff;
+  border: 8px solid #fff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
@@ -1192,7 +1094,7 @@ main .index-columns {
   height: 30px;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: #444;
 }
 
 .price-controls label {
@@ -1232,7 +1134,6 @@ main .index-columns {
 .filter-power {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -1251,11 +1152,8 @@ main .index-columns {
 
 .filter-option label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
-
   user-select: none;
 }
 
@@ -1264,10 +1162,8 @@ main .index-columns {
   position: absolute;
   top: -3px;
   left: -35px;
-
   width: 23px;
   height: 23px;
-
   background-image: url("../img/checkbox-normal-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1275,7 +1171,6 @@ main .index-columns {
 
 .filter-input-checkbox:checked + label::before {
   width: 27px;
-
   background-image: url("../img/checkbox-normal-on.svg");
 }
 
@@ -1302,10 +1197,8 @@ main .index-columns {
   position: absolute;
   top: -3px;
   left: -35px;
-
   width: 25px;
   height: 25px;
-
   border: 4px solid #c5c5c5;
   border-radius: 50%;
 }
@@ -1324,10 +1217,8 @@ main .index-columns {
   position: absolute;
   top: 5px;
   left: -27px;
-
   width: 8px;
   height: 8px;
-
   background-color: #c5c5c5;
   border-radius: 50%;
 }
@@ -1336,7 +1227,7 @@ main .index-columns {
   background-color: #b5b5b5;
 }
 
-.filter-input-radio:checked:disabled + label:after {
+.filter-input-radio:checked:disabled + label::after {
   background-color: #b5b5b5;
   opacity: 0.3;
 }
@@ -1344,15 +1235,13 @@ main .index-columns {
 .power-type + .filter-button {
   margin-top: 59px;
   padding: 9px 39px 9px 39px;
-
   font: inherit;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
-
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
   cursor: pointer;
 }
@@ -1363,27 +1252,23 @@ main .index-columns {
   width: 700px;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .catalog-item {
   position: relative;
-
   display: flex;
   flex-direction: column;
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
   margin-bottom: 20px;
-
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
-  color: #000000;
-
+  color: #000;
   border: 1px solid #e5e5e5;
 }
 
@@ -1408,10 +1293,9 @@ main .index-columns {
   margin: 0;
   margin-top: 8px;
   padding: 0 30px;
-
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
+  color: #000;
 }
 
 .catalog-item .image {
@@ -1428,18 +1312,16 @@ main .index-columns {
   top: -1px;
   right: -1px;
   z-index: 20;
-
   width: 60px;
   height: 60px;
   overflow: hidden;
-
   text-indent: -1000px;
-
   background: url("../img/product-new-flag.png") no-repeat 0 0;
 }
 
 .catalog-item .price {
   position: relative;
+
   /* width: 141px; */
 
   margin: 0 auto;
@@ -1449,22 +1331,18 @@ main .index-columns {
   padding-bottom: 10px;
   padding-left: 36px;
   align-self: center;
-
-  color: #ffffff;
-
+  color: #fff;
   background-color: #ee3643;
   border-radius: 3px;
 }
 
-.catalog-item .price:after {
+.catalog-item .price::after {
   content: "";
   position: absolute;
   top: 0;
   right: -27px;
-
   width: 0;
   height: 0;
-
   border: 19px solid white;
   border-left-color: #ee3643;
 }
@@ -1475,8 +1353,7 @@ main .index-columns {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-
-  color: #999999;
+  color: #999;
   text-decoration: line-through;
 }
 
@@ -1485,13 +1362,11 @@ main .index-columns {
   top: 0;
   left: 0;
   z-index: 10;
-
   display: none;
   order: -1;
   width: 218px;
   height: 170px;
   padding-top: 44px;
-
   background-color: rgb(255, 255, 255);
 }
 
@@ -1510,25 +1385,21 @@ main .index-columns {
   padding-right: 0;
   padding-bottom: 7px;
   padding-left: 3px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
-
   background-color: #63a63e;
   cursor: pointer;
 }
 
 .actions .buy {
   position: relative;
-
   padding-top: 10px;
   padding-left: 3px;
-
   box-shadow: inset 0 -3px 0 0 #367315;
 }
 
@@ -1537,10 +1408,8 @@ main .index-columns {
   position: absolute;
   top: 10px;
   left: 14px;
-
   width: 15px;
   height: 15px;
-
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1564,7 +1433,6 @@ main .index-columns {
 
 .actions .bookmark {
   color: #32425c;
-
   background: white;
   border: 3px solid #63a63e;
 }
@@ -1576,7 +1444,6 @@ main .index-columns {
 
 .actions .bookmark:active {
   color: rgb(50, 66, 92);
-
   opacity: 0.3;
 }
 
@@ -1584,7 +1451,7 @@ main .index-columns {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
-  color: #000000;
+  color: #000;
 }
 
 .index-columns p {
@@ -1620,19 +1487,16 @@ main .index-columns {
 .features-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .features-list .feature-item {
   position: relative;
-
   margin-bottom: 20px;
   margin-left: 36px;
-
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
+  color: #000;
 }
 
 .features-list .feature-item::before {
@@ -1640,11 +1504,9 @@ main .index-columns {
   position: absolute;
   top: 8px;
   left: -36px;
-
   display: block;
   width: 25px;
   height: 2px;
-
   background-color: #ee3643;
 }
 
@@ -1700,7 +1562,7 @@ main .index-columns {
   top: 120px;
   left: 50%;
   margin-left: -310px;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: 30;
 }
 
@@ -1724,8 +1586,7 @@ main .index-columns {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
-
+  color: #000;
   border: 2px solid #dee3e4;
   outline: none;
 }
@@ -1771,7 +1632,7 @@ main .index-columns {
   height: 3px;
   background-color: #ee3643;
   top: 9px;
-  right: 0px;
+  right: 0;
 }
 
 .modal-close::before {
@@ -1800,7 +1661,7 @@ main .index-columns {
   padding-top: 9px;
   padding-bottom: 8px;
   padding-left: 11px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #dee3e4;
   width: 220px;
 }
@@ -1837,7 +1698,7 @@ main .index-columns {
   top: 120px;
   left: 50%;
   margin-left: -310px;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: 30;
   display: none;
 }
@@ -1848,13 +1709,11 @@ main .index-columns {
   padding: 37px 80px;
 }
 
-
 .modal-product-added h2 {
   margin-top: 64px;
   margin-right: 125px;
   margin-bottom: 67px;
   margin-left: 179px;
-
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -1865,10 +1724,8 @@ main .index-columns {
   position: absolute;
   top: 47px;
   left: 81px;
-
   width: 66px;
   height: 66px;
-
   background-image: url("../img/icon-modal-check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1879,7 +1736,7 @@ main .index-columns {
   top: 50px;
   left: 50%;
   margin-left: -470px;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: 30;
 }
 
@@ -1899,6 +1756,7 @@ main .index-columns {
   position: absolute;
   top: 0;
   left: 0;
+  border: 0;
 }
 
 
@@ -1915,7 +1773,6 @@ main .index-columns {
   margin-left: -31px;
   padding-right: 47px;
   padding-left: 44px;
-
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -1943,7 +1800,6 @@ main .index-columns {
   margin: 0;
   margin-top: 59px;
   padding: 0;
-
   list-style: none;
 }
 
@@ -1961,15 +1817,13 @@ main .index-columns {
 
 .card-list .card-item {
   position: relative;
-
   width: 300px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding-top: 21px;
   padding-bottom: 22px;
   padding-left: 23px;
-
-  color: #ffffff;
+  color: #fff;
 }
 
 .card-list .card-item:nth-child(3n) {
@@ -1981,10 +1835,8 @@ main .index-columns {
   position: absolute;
   top: 33px;
   right: 28px;
-
   width: 73px;
   height: 63px;
-
   background-image: url("../img/icon-card-1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1993,7 +1845,6 @@ main .index-columns {
 .card-item h2 {
   margin: 0;
   margin-bottom: 20px;
-
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -2012,14 +1863,12 @@ main .index-columns {
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
-
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
-
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -2034,7 +1883,6 @@ main .index-columns {
 
 .card-list .slider {
   position: relative;
-
   width: 620px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -2043,8 +1891,7 @@ main .index-columns {
   padding-bottom: 22px;
   padding-left: 25px;
   background-color: #685c53;
-
-  color: #ffffff;
+  color: #fff;
 }
 
 .slider {
@@ -2064,7 +1911,6 @@ main .index-columns {
 
 .slider h2 {
   margin: 0;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -2085,7 +1931,6 @@ main .index-columns {
   top: 0;
   left: 0;
   z-index: 0;
-
   width: 620px;
   height: 100%;
 }
@@ -2101,10 +1946,8 @@ main .index-columns {
 .slider .slider-button {
   content: "";
   position: absolute;
-
   width: 22px;
   height: 40px;
-
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -2114,14 +1957,12 @@ main .index-columns {
 .slider .slider-left {
   top: calc(50% - 20px);
   left: 25px;
-
   background-image: url("../img/icon-left.svg");
 }
 
 .slider .slider-right {
   top: calc(50% - 20px);
   right: 20px;
-
   background-image: url("../img/icon-right.svg");
 }
 
@@ -2136,10 +1977,8 @@ main .index-columns {
 .card-item.card-1::after {
   top: 31px;
   right: 43px;
-
   width: 44px;
   height: 65px;
-
   background-image: url("../img/icon-card-1.svg");
 }
 
@@ -2150,10 +1989,8 @@ main .index-columns {
 .card-item.card-2::after {
   top: 33px;
   right: 28px;
-
   width: 75px;
   height: 61px;
-
   background-image: url("../img/icon-card-2.svg");
 }
 
@@ -2164,10 +2001,8 @@ main .index-columns {
 .card-item.card-3::after {
   top: 31px;
   right: 31px;
-
   width: 78px;
   height: 62px;
-
   background-image: url("../img/icon-card-3.svg");
 }
 
@@ -2178,10 +2013,8 @@ main .index-columns {
 .card-item.card-4::after {
   top: 26px;
   right: 45px;
-
   width: 59px;
   height: 72px;
-
   background-image: url("../img/icon-card-4.svg");
 }
 
@@ -2192,10 +2025,8 @@ main .index-columns {
 .card-item.card-5::after {
   top: 32px;
   right: 31px;
-
   width: 78px;
   height: 63px;
-
   background-image: url("../img/icon-card-5.svg");
 }
 
@@ -2215,14 +2046,12 @@ main .index-columns {
   padding-right: 24px;
   padding-bottom: 26px;
   padding-left: 24px;
-
   background-color: #f9f5f0;
 }
 
 .popular-section .popular-title {
   margin: 0;
   margin-left: 5px;
-
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -2263,18 +2092,15 @@ main .index-columns {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .popular-brands-list .popular-brand {
   display: flex;
   width: 220px;
-  
   margin-right: 20px;
   margin-bottom: 20px;
-
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #eaeaea;
 }
 
@@ -2337,6 +2163,7 @@ main .index-columns {
 .brand-lg img {
   margin-top: -5px;
 }
+
 .brand-aeg img {
   margin-top: -5px;
 }
@@ -2350,6 +2177,7 @@ main .index-columns {
 
 .services {
   /* temp */
+
   /* min-height: 522px; */
   padding-bottom: 53px;
   background-color: #f4f7f9;
@@ -2363,11 +2191,10 @@ main .index-columns {
 .services h2 {
   margin: 0;
   margin-bottom: 25px;
-
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -2378,23 +2205,20 @@ main .index-columns {
 
 .services .description {
   margin: 0;
-
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
+  color: #000;
 }
 
 .services .switcher {
   position: relative;
-
   width: 240px;
   margin: 0;
   margin-right: 82px;
   padding: 0;
   padding-bottom: 46px;
-
   list-style: none;
 }
 
@@ -2403,10 +2227,8 @@ main .index-columns {
   position: absolute;
   top: -44px;
   right: 0;
-
   width: 10px;
   height: 110%;
-
   background-image: url("../img/shadow.png");
   background-repeat: repeat-y;
   background-position: 0 0;
@@ -2417,12 +2239,10 @@ main .index-columns {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 22px;
-
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
-  color: #ffffff;
-
+  color: #fff;
   background-color: #32425c;
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   cursor: pointer;
@@ -2438,11 +2258,9 @@ main .index-columns {
 #service-2:checked ~ .services-columns label[for="service-2"],
 #service-3:checked ~ .services-columns label[for="service-3"] {
   color: #32425c;
-
-  background-color: #ffffff;
-  box-shadow: 0 1px 0 0 #ffffff, inset 0 1px 0 0 #ffffff;
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #fff;
 }
-
 
 .services-columns {
   display: flex;
@@ -2451,7 +2269,6 @@ main .index-columns {
 
 .services-promo {
   position: relative;
-
   display: none;
   width: 620px;
 }
@@ -2461,10 +2278,8 @@ main .index-columns {
   position: absolute;
   top: 24px;
   right: 0;
-
   width: 468px;
   height: 261px;
-
   background-image: url("../img/services-delivery.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2475,10 +2290,8 @@ main .index-columns {
   position: absolute;
   top: 2px;
   right: -7px;
-
   width: 389px;
   height: 283px;
-
   background-image: url("../img/services-guarantee.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2489,10 +2302,8 @@ main .index-columns {
   position: absolute;
   top: 0;
   right: -9px;
-
   width: 465px;
   height: 285px;
-
   background-image: url("../img/services-credit.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2501,7 +2312,6 @@ main .index-columns {
 .services-promo h3 {
   margin: 0;
   margin-bottom: 24px;
-
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -2545,10 +2355,9 @@ main .index-columns {
 .pagination-item a {
   display: block;
   padding: 10px 15px;
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
-
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -2567,14 +2376,14 @@ main .index-columns {
 .pagination-item-current a {
   border: 1px solid #ee3643;
   background-color: #ee3643;
-  color: #ffffff;
+  color: #fff;
 }
 
 .pagination-item-current a:hover,
 .pagination-item-current a:focus {
   border: 1px solid #ee3643;
   background-color: #ee3643;
-  color: #ffffff;
+  color: #fff;
 }
 
 .pagination-item-next a {
