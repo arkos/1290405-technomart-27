@@ -445,6 +445,10 @@ html {
   background-color: #ca2c37;
 }
 
+.logo:active {
+  background-color: #ba2732;
+}
+
 .logo-small {
   width: 220px;
   height: 47px;
@@ -2460,6 +2464,11 @@ main .index-columns {
   background-color: #32425c;
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   cursor: pointer;
+}
+
+.switcher-item:hover:not(:active),
+.switcher-item:focus:not(:active) {
+  background-color: #293449;
 }
 
 .service-1:checked ~ .services-columns .promo-delivery,
