@@ -816,6 +816,10 @@ html {
   margin-left: 3px;
 }
 
+.footer-categories .phone {
+  color: inherit;
+}
+
 .footer-contact-dev b {
   font-weight: normal;
   font-size: 16px;
