@@ -689,7 +689,6 @@ html {
 .main-footer-features-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 547px;
   margin: 0;
   padding: 0;
@@ -700,6 +699,7 @@ html {
 .main-footer-features-list a {
   display: block;
   margin-top: 37px;
+  margin-right: 58px;
 
   font-size: 18px;
   line-height: 24px;
@@ -723,7 +723,6 @@ html {
 .main-footer-product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 524px;
   margin: 0;
   padding: 0;
@@ -738,10 +737,15 @@ html {
 .main-footer-product-list a {
   display: block;
   margin-top: 8px;
+  margin-right: 58px;
 
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
+}
+
+.product-list-item:last-child a {
+  margin-right: 0;
 }
 
 .main-footer-product-list a:hover,
