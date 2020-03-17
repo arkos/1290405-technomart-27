@@ -532,8 +532,9 @@ html {
 
 .button-logged-in {
   position: relative;
-  width: 298px;
+
   display: flex;
+  width: 298px;
   padding-top: 14px;
   padding-right: 10px;
   padding-bottom: 11px;
@@ -546,9 +547,9 @@ html {
 
 .button-logged-in .user-name {
   display: block;
+  width: 200px;
   margin-top: -2px;
   margin-right: 35px;
-  width: 200px;
 
   font-size: 21px;
   line-height: 21px;
@@ -785,6 +786,7 @@ html {
   margin-top: -2px;
   margin-right: 7px;
   padding: 0;
+
   list-style: none;
 }
 
@@ -1120,8 +1122,8 @@ main .index-columns {
 }
 
 .product-filters .price-range {
-  padding-bottom: 27px;
   margin-bottom: 16px;
+  padding-bottom: 27px;
 }
 
 .range-controls {
@@ -1222,8 +1224,8 @@ main .index-columns {
 }
 
 .product-filters .brands {
-  padding-bottom: 2px;
   margin-bottom: 17px;
+  padding-bottom: 2px;
 }
 
 .product-filters .brands::after {
