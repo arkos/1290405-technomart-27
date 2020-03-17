@@ -1097,27 +1097,15 @@ main .index-columns {
 }
 
 .product-filters fieldset {
-  position: relative;
-
   margin: 0;
   padding: 0;
 
   border: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.product-filters fieldset::after {
-  content: "";
-  position: absolute;
-  left: 0;
-
-  width: 100%;
-  height: 1px;
-
-  background-color: #e5e5e5;
-}
-
-.product-filters fieldset:last-of-type::after {
-  display: none;
+.product-filters fieldset:last-of-type {
+  border: none;
 }
 
 .product-filters legend {
@@ -1131,11 +1119,8 @@ main .index-columns {
 }
 
 .product-filters .price-range {
-  margin-bottom: 44px;
-}
-
-.price-range::after {
-  top: 196px;
+  padding-bottom: 27px;
+  margin-bottom: 16px;
 }
 
 .range-controls {
@@ -1236,7 +1221,8 @@ main .index-columns {
 }
 
 .product-filters .brands {
-  margin-bottom: 20px;
+  padding-bottom: 2px;
+  margin-bottom: 17px;
 }
 
 .product-filters .brands::after {
